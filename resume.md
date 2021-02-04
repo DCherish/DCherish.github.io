@@ -36,10 +36,6 @@ Inha University - Information and Communication Engineering <span style="float: 
 **Gmail** : jongillou@gmail.com  
 **Email** : kjhyohan@naver.com  
 **Kakaotalk** : jongillou  
-
-Title - **Comapany** <span style="float: right; ">Duration</span>  
-_Description Phasellus a tellus volutpat, ornare sapien et, lacinia erat. Suspendisse congue, enim vitae mattis pulvinar, eros lacus porttitor neque, eu sodales nibh metus nec arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;_  
-Technologies used  
 <pre>
 
 </pre>
