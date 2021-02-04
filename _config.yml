@@ -6,10 +6,10 @@ description: >
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://DCherish.github.io" # the base hostname & protocol for your site
 
-social-network-links:
+author:
   fullname: DCherish
   github: DCherish
-  instagram: testtest
+  linkedin: linkedin
   email: jongillou@gmail.com
 
 
