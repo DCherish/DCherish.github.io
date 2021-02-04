@@ -8,14 +8,16 @@ subtitle: About DCherish
 <br>
 
 ### PROJECTS // Android & university NOTE !!
-**Title** - Description - Place <span style="float: right; ">Time span</span>  
-Pellentesque euismod odio nec mollis rutrum. Nulla facilisi. In hac habitasse platea dictumst. Etiam facilisis velit velit, id dapibus lacus bibendum nec. Proin euismod tortor non nunc luctus, ut varius mauris tristique.  
 
 **Title** - Description - Place <span style="float: right; ">Time span</span>  
 Pellentesque euismod odio nec mollis rutrum. Nulla facilisi. In hac habitasse platea dictumst. Etiam facilisis velit velit, id dapibus lacus bibendum nec. Proin euismod tortor non nunc luctus, ut varius mauris tristique.  
 
 **Title** - Description - Place <span style="float: right; ">Time span</span>  
 Pellentesque euismod odio nec mollis rutrum. Nulla facilisi. In hac habitasse platea dictumst. Etiam facilisis velit velit, id dapibus lacus bibendum nec. Proin euismod tortor non nunc luctus, ut varius mauris tristique.  
+
+**Title** - Description - Place <span style="float: right; ">Time span</span>  
+Pellentesque euismod odio nec mollis rutrum. Nulla facilisi. In hac habitasse platea dictumst. Etiam facilisis velit velit, id dapibus lacus bibendum nec. Proin euismod tortor non nunc luctus, ut varius mauris tristique.  
+
 
 ### EDUCATION
 
@@ -24,6 +26,7 @@ Hyomyeong Highschool <span style="float: right; ">2011.03-2014.02</span>
 
 Inha University - Information and Communication Engineering <span style="float: right; ">2014.03-2021.02</span>  
 **Graduate [Expected]**  
+
 
 ### CONTACT
 
