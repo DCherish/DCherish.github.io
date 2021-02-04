@@ -17,8 +17,10 @@ Pellentesque euismod odio nec mollis rutrum. Nulla facilisi. In hac habitasse pl
 
 **Title** - Description - Place <span style="float: right; ">Time span</span>  
 Pellentesque euismod odio nec mollis rutrum. Nulla facilisi. In hac habitasse platea dictumst. Etiam facilisis velit velit, id dapibus lacus bibendum nec. Proin euismod tortor non nunc luctus, ut varius mauris tristique.  
+<pre>
 
 
+</pre>
 ### EDUCATION
 
 Hyomyeong Highschool <span style="float: right; ">2011.03-2014.02</span>  
@@ -26,8 +28,11 @@ Hyomyeong Highschool <span style="float: right; ">2011.03-2014.02</span>
 
 Inha University - Information and Communication Engineering <span style="float: right; ">2014.03-2021.02</span>  
 **Graduate [Expected]**  
+<pre>
 
 
+
+</pre>
 ### CONTACT
 
 **Github** 👉 <a href="https://github.com/DCherish"><strong>Click here </strong> </a>  
@@ -38,8 +43,9 @@ Inha University - Information and Communication Engineering <span style="float: 
 Title - **Comapany** <span style="float: right; ">Duration</span>  
 _Description Phasellus a tellus volutpat, ornare sapien et, lacinia erat. Suspendisse congue, enim vitae mattis pulvinar, eros lacus porttitor neque, eu sodales nibh metus nec arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;_  
 Technologies used  
+<pre>
 
-
+</pre>
 ### RECOGNITION & INTERESTS
 
 - Etiam luctus ante quis est dictum faucibus.
