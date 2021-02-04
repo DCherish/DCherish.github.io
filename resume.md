@@ -19,7 +19,6 @@ Pellentesque euismod odio nec mollis rutrum. Nulla facilisi. In hac habitasse pl
 Pellentesque euismod odio nec mollis rutrum. Nulla facilisi. In hac habitasse platea dictumst. Etiam facilisis velit velit, id dapibus lacus bibendum nec. Proin euismod tortor non nunc luctus, ut varius mauris tristique.  
 <pre>
 
-
 </pre>
 ### EDUCATION
 
@@ -29,8 +28,6 @@ Hyomyeong Highschool <span style="float: right; ">2011.03-2014.02</span>
 Inha University - Information and Communication Engineering <span style="float: right; ">2014.03-2021.02</span>  
 **Graduate [Expected]**  
 <pre>
-
-
 
 </pre>
 ### CONTACT
