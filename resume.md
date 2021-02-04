@@ -22,10 +22,10 @@ Pellentesque euismod odio nec mollis rutrum. Nulla facilisi. In hac habitasse pl
 </pre>
 ### EDUCATION
 
-Hyomyeong Highschool <span style="float: right; ">2011.03-2014.02</span>  
+Hyomyeong Highschool <span style="float: right; ">2011.03 - 2014.02</span>  
 **Graduate**  
 
-Inha University - Information and Communication Engineering <span style="float: right; ">2014.03-2021.02</span>  
+Inha University - Information and Communication Engineering <span style="float: right; ">2014.03 - 2021.02</span>  
 **Graduate [Expected]**  
 <pre>
 
