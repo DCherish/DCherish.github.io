@@ -19,23 +19,21 @@ Pellentesque euismod odio nec mollis rutrum. Nulla facilisi. In hac habitasse pl
 
 ### EDUCATION
 
-Hyomyeong Highschool <span style="float: right; ">2011.03-2014.02</span>  
-**Graduate** 
+Hyomyeong Highschool **Graduate** <span style="float: right; ">2011.03-2014.02</span>
  
-Inha University <span style="float: right; ">2014.03-2021.02</span>  
-**Graduate [Expected]**  
+Inha University **Graduate [Expected]** <span style="float: right; ">2014.03-2021.02</span>
 **Major**
 Information and Communication Engineering
 
 ### CONTACT
 
-**Github** - <a href="https://github.com/DCherish"><strong>Click here </strong> </a> 
+**Github** 👉 <a href="https://github.com/DCherish"><strong>Click here </strong> </a> 
  
-**Gmail** - <strong>jongillou@gmail.com</strong>
+**Gmail** : jongillou@gmail.com
 
-**Email** - <strong>kjhyohan@naver.com</strong>
+**Email** : kjhyohan@naver.com
 
-**Kakaotalk** - <strong>jongillou</strong>
+**Kakaotalk** : jongillou
 
 
 _Description Phasellus a tellus volutpat, ornare sapien et, lacinia erat. Suspendisse congue, enim vitae mattis pulvinar, eros lacus porttitor neque, eu sodales nibh metus nec arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;_  
