@@ -4,6 +4,6 @@ sitemap:
   exclude: 'yes'
 ---
 User-agent: *
-Disallow:
+Allow: /
 
-Sitemap: {{ site.url }}/sitemap.xml
+Sitemap: https://dcherish.github.io/sitemap.xml
