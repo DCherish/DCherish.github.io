@@ -12,6 +12,8 @@ author:
   email: jongillou@gmail.com
   linkedin: linkedin
 
+# Plugins
+plugins: ['jekyll-paginate', 'jekyll-sitemap', 'jekyll-include-cache', 'jekyll-gist']
 
 # Syntax highlighting
 highlightstyle: 'agate'
