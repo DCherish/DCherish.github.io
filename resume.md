@@ -34,7 +34,7 @@ Inha University - Information and Communication Engineering <span style="float: 
 
 **Github** 👉 <a href="https://github.com/DCherish"><strong>Click here </strong> </a>  
 **Gmail** : jongillou@gmail.com  
-**Email** : kjhyohan@naver.com  
+**Email** : jongillou@naver.com  
 **Kakaotalk** : jongillou  
 <pre>
 
