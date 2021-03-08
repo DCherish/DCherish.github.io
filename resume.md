@@ -16,7 +16,7 @@ subtitle: About DCherish
 BLE Beacon을 이용하여 실내 위치 측위를 통해 사용자가 실내에서 증강현실의 방식으로 다양한 서비스를 사용할 수 있도록 응용 소프트웨어를 개발하였습니다.  
 
 **Title** - AR Cruise Game - Inha University <span style="float: right; ">2019.05-2019.06</span>  
-Vuforia SDK를 이용하여 AR Object인 Cruise와 Coin을 Augmenting하였고, Cruise를 UI로 구현되어있는 버튼으로 조작하여 Coin을 먹는 Mini-Game을 만들어보았습니다.  
+Vuforia SDK를 이용하여 AR Object인 Cruise와 Coin을 Augmenting하였고, Cruise를 UI로 구현되어있는 버튼으로 조작하여 Coin을 먹는 Mini-Game을 개발하였습니다.  
 <pre>
 
 </pre>
