@@ -6,8 +6,8 @@ sitemap:
   priority: 0.9
 ---
 
-<img src="{{ '/assets/img/dcherish.jpg' | prepend: site.baseurl }}" id="about-img">
+<img src="{{ '/assets/img/dcherish.jpg' | prepend: site.baseurl }}" id="about-img" style="width: 100px; height: auto;">
 
 <div id="describe-text">
-	<p style="font-size:200%;">🤙</p>
+	<p style="font-size:100%;">🤙</p>
 </div>
