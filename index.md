@@ -6,8 +6,8 @@ sitemap:
   priority: 0.9
 ---
 
-<img src="{{ '/assets/img/pudhina.jpg' | prepend: site.baseurl }}" id="about-img">
+<img src="{{ '/assets/img/dcherish.jpg' | prepend: site.baseurl }}" id="about-img">
 
 <div id="describe-text">
-	<p style="font-size:200%;">Coming soon.. asap ! Plz wait :)</p>
+	<p style="font-size:200%;">🤙</p>
 </div>
