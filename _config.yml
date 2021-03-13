@@ -25,4 +25,4 @@ markdown: kramdown
 
 # Disqus settings
 disqus_url: https-dcherish-github-io-1.disqus.com
-disqus_id: https-dcherish-github-io
+disqus_shortname: https-dcherish-github-io-1
