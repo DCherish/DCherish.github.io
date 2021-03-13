@@ -80,11 +80,11 @@ L2 = tf.nn.dropout(L2, keep_prob)
 
 <br>
 
-<img src="{{ '/assets/img/grid.jpg' }}" style="width: 630px; height: auto;">
+<img src="{{ '/assets/img/grid.jpg' }}" style="width: 630px; height: auto;" align="middle">
 <br>
-<img src="{{ '/assets/img/3dmodel.jpg' }}" style="width: 630px; height: auto;">
+<img src="{{ '/assets/img/3dmodel.jpg' }}" style="width: 630px; height: auto;" align="middle">
 <br>
-<img src="{{ '/assets/img/unity3d.jpg' }}" style="width: 630px; height: auto;">
+<img src="{{ '/assets/img/unity3d.jpg' }}" style="width: 630px; height: auto;" align="middle">
 
 건물을 **Grid**한 구역으로 나누고 셀마다 좌표를 설정하였습니다. **SketchUp** Tool을 사용하여 실제 환경과 최대한 동일하게 3D Model을 생성하였으며, **Unity**에서 해당 모델을 활용하였습니다.  
 
