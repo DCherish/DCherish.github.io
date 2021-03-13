@@ -4,6 +4,7 @@ title:  "AR Indoor Navigation"
 subtitle: "A service application when someone is indoors by using AR tech"
 date:   2020-07-10 11:11:11 +0530
 categories: ["project"]
+comments: true
 ---
 <p align="middle"><iframe width="759" height="480" src="https://www.youtube.com/embed/NvaQYQSHGWI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
 
@@ -97,5 +98,11 @@ Deep Learning 학습 모델을 생성하기 위하여 많은 양의 Data가 필�
 더 정확한 위치 측위를 위해서는 몇 가지 개선점이 필요하다고 생각됩니다. 각 좌표마다 약 500개씩으로 데이터를 수집하였다면 기존의 데이터에 비해 약 5배의 데이터를 학습시킬 수 있으므로 더 정확한 결과 값이 나왔을 것으로 생각됩니다. 또한, 3D Model을 줄자와 같은 측정 도구를 통해 단위를 측정하며 생성하였다면 보다 양질의 AR 서비스를 이용할 수 있었을 것으로 생각합니다.
 
 위의 프로젝트를 보완하여 사용한다면 비용이 저렴하고 설치가 용이한 Beacon을 이용하여 다양한 실내 위치 서비스를 AR 형식으로 제공하기 때문에 사용자들의 편의성을 극대화할 수 있을 것입니다.
+
+{% if page.comments %}
+<div id="post-disqus" class="container">
+{% include disqus_comments.html %}
+</div>
+{% endif %}
 
 [sourcecode]: https://github.com/DCherish/G-Project
