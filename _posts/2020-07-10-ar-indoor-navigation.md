@@ -9,7 +9,7 @@ comments: true
 
 <br>
 
-<iframe width="759" height="480" src="https://www.youtube.com/embed/NvaQYQSHGWI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p align="middle"><iframe width="759" height="480" src="https://www.youtube.com/embed/NvaQYQSHGWI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
 
 *총 두 가지의 영상이 차례로 재생됩니다.*  
 
@@ -63,7 +63,7 @@ BLE Beacon을 제작하기 위해 HM-10 모듈만을 따로 구매하여 제작�
 
 **Deep Learning**은 **Machine Learning**의 한 분야로, **인공신경망(Neural Network)**을 기초로 하고 있습니다. 인공신경망은 사람의 신경망 원리와 구조를 모방하여 만든 **기계학습 알고리즘**입니다. 인공신경망은 기본적으로 **입력층(Input Layer)**, **은닉층(Hidden Layer)**, **출력층(Output Layer)**, 총 세 개의 계층으로 구성되어 있습니다. 그 중, 은닉층이 Deep하고 Wide하다는 특성을 하지고 있는 **Deep Neural Network(DNN)** 구조를 이용하였습니다. **수치예측**, 분류, 문자인식 혹은 이미지 트레이닝 같은 분야에서 **장점**이 있습니다. But, 신경망이 복잡할수록 학습 시 많은 시간이 소요되며, 결과 해석이 어렵다는 단점이 있습니다.  
 
-**Code(DNN) 코드의 일부분**
+**Code의 일부분 (DNN 관련)**
 ```python
 import tensorflow as tf  
 #중략···
@@ -109,7 +109,7 @@ Deep Learning 학습 모델을 생성하기 위하여 많은 양의 Data가 필�
 
 더 정확한 위치 측위를 위해서는 몇 가지 개선점이 필요하다고 생각됩니다. 각 좌표마다 약 500개씩으로 데이터를 수집하였다면 기존의 데이터에 비해 약 5배의 데이터를 학습시킬 수 있으므로 더 정확한 결과 값이 나왔을 것으로 생각됩니다. 또한, 3D Model을 줄자와 같은 측정 도구를 통해 단위를 측정하며 생성하였다면 보다 양질의 AR 서비스를 이용할 수 있었을 것으로 생각합니다.
 
-위의 프로젝트를 보완하여 사용한다면 비용이 저렴하고 설치가 용이한 Beacon을 이용하여 다양한 실내 위치 서비스를 AR 형식으로 제공하기 때문에 사용자들의 편의성을 극대화할 수 있을 것입니다.
+위의 프로젝트를 보완하여 사용한다면 비용이 저렴하고 설치가 용이한 Beacon을 이용하여 다양한 실내 위치 서비스를 AR 형식으로 제공하기 때문에 사용자들의 편의성을 극대화할 수 있을 것입니다.  
 
 <br>
 <br>
