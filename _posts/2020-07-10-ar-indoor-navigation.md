@@ -28,7 +28,7 @@ categories: ["project"]
 
 <img src="{{ '/assets/img/equipment.jpg' }}" style="width: 500px; height: auto;" align="center">
 
-BLE Beacon을 제작하기 위해 HM-10 모듈만을 따로 구매하여 제작하였고 아두이노를 통하여 환경설정 하였습니다. 블루투스 신호를 수신하기 위하여 Android 기반의 Samsung Galaxy S7 Edge 모델을 사용하였습니다.
+BLE Beacon을 제작하기 위해 HM-10 모듈만을 따로 구매하여 제작하였고 아두이노를 통하여 환경설정을 하였습니다. 블루투스 신호를 수신하기 위하여 Android 기반의 Samsung Galaxy S7 Edge 모델을 사용하였습니다.
 
 <br>
 
@@ -49,7 +49,7 @@ BLE Beacon을 제작하기 위해 HM-10 모듈만을 따로 구매하여 제작�
 **Deep Learning**은 **Machine Learning**의 한 분야로, **인공신경망**을 기초로 하고 있습니다. **인공신경망(Neural Network)**은 사람의 신경망 원리와 구조를 모방하여 만든 **기계학습 알고리즘**입니다. 인공신경망은 기본적으로 **입력층(Input Layer)**, **은닉층(Hidden Layer)**, **출력층(Output Layer)**, 총 세 개의 계층으로 구성되어 있습니다. 그 중, 은닉층이 Deep하고 Wide하다는 특성을 하지고 있는 **Deep Neural Network(DNN)** 구조를 이용하였습니다. **수치예측**, 분류, 문자인식 혹은 이미지 트레이닝 같은 분야에서 **장점**이 있습니다. But, 신경망이 **복잡**할수록 학습 시 많은 시간이 소요되며, 결과 해석이 어렵다는 단점이 있습니다.
 
 
-{% highlight python %}
+```python
 import tensorflow as tf  
 #중략···
 W1 = tf.get_variable("W1", shape=[4, 128], initializer=tf.contrib.layers.variance_scaling_initializer())  
@@ -62,7 +62,7 @@ L1 = tf.nn.dropout(L1, keep_prob)
 L2 = tf.nn.relu(tf.matmul(L1, W2))  
 L2 = tf.nn.dropout(L2, keep_prob)
 #중략···
-{% endhighlight %}
+```
 
 <br>
 
