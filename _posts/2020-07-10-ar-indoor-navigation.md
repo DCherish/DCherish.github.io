@@ -31,6 +31,22 @@ categories: ["project"]
 
 <br>
 
+<img src="{{ '/assets/img/kalmanfilter.jpg' }}">
+
+*스마트폰에서 수신되는 블루투스의 신호 강도가 얼마나 불규칙적인지 알아보기 위하여 간단한 Application을 구현하여 테스트하였습니다. 신호를 안정시키기 위하여 대중적으로 사용되는 칼만 필터(Kalman-Filter)를 적용하여 대조한 결과입니다.*  
+
+<br>
+
+<img src="{{ '/assets/img/data.gif' }}">
+
+*실시간으로 신호의 세기가 받아지는 것을 확인할 수 있습니다.*  
+
+<br>
+
+<img src="{{ '/assets/img/socket.gif' }}">  
+
+<br>
+
 Jekyll also offers powerful support for code snippets:
 
 {% highlight ruby %}
