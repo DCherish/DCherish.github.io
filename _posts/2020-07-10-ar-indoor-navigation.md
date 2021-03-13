@@ -19,15 +19,13 @@ categories: ["project"]
 
 최근 소비자들의 편리성을 증대시키기 위하여 실내 위치 측정에 관한 다양한 연구가 진행되고 있습니다. 단순히 무선 신호에 기반한 측위 시스템에서는 송수긴기 사이의 전파 경로가 물체들로 인하여 가려지거나, 다른 환경적인 요인들로 인한 신호의 정확성 문제가 발생하기 때문에 무선 신호만을 이용하여 정확한 실내 위치를 도출하는 것에는 한계가 존재합니다. 즉, **BLE(Bluetooth Low Energy) Beacon**만을 이용하여 실내 위치 측위를 하는 방법들은 대부분 정확성이 떨어지기에 실제로 사용함에 있어서 한계가 존재합니다. 본 프로젝트의 목적은 위에서 발생한 문제점들을 해결하기 위해 Beacon을 설치하여 RSSI(Received Signal Strength Indication, 신호강도)를 실시간으로 수신하여 **머신러닝(Machine Learning)** 분야와의 응용을 통해 실내 위치 측위 오차를 개선하는 것입니다. 또한, 최근들어 **증강현실(Augmented Reality, AR)** 기술이 비약적으로 발전하면서 사용자들에게 많은 서비스를 제공하고 있음에 따라 증강현실을 이용하여 실내에서의 다양한 서비스를 제공하는 응용 소프트웨어를 구현하였습니다.  
 
-<br>
-
 [SourceCode][sourceCode] 👈 Click here  
-➡ Unity Project File + Server(java) File + AAR plugin + TensorFlow Model + Deep Learning(python) code  
+ Unity Project File + Server(java) File + AAR plugin + TensorFlow Model + Deep Learning(python) code  
 
 <br>
 <br>
 
-## CONFIGURATION ⚡
+### CONFIGURATION ⚡
 
 <img src="{{ '/assets/img/diagram.jpg' }}" style="width: 800px; height: auto;" align="middle">
 
@@ -55,9 +53,9 @@ BLE Beacon을 제작하기 위해 HM-10 모듈만을 따로 구매하여 제작�
 
 <img src="{{ '/assets/img/dnn.jpg' }}" style="width: 700px; height: auto;" align="middle">
 
-**Deep Learning**은 **Machine Learning**의 한 분야로, **인공신경망**을 기초로 하고 있습니다. **인공신경망(Neural Network)**은 사람의 신경망 원리와 구조를 모방하여 만든 **기계학습 알고리즘**입니다. 인공신경망은 기본적으로 **입력층(Input Layer)**, **은닉층(Hidden Layer)**, **출력층(Output Layer)**, 총 세 개의 계층으로 구성되어 있습니다. 그 중, 은닉층이 Deep하고 Wide하다는 특성을 하지고 있는 **Deep Neural Network(DNN)** 구조를 이용하였습니다. **수치예측**, 분류, 문자인식 혹은 이미지 트레이닝 같은 분야에서 **장점**이 있습니다. But, 신경망이 **복잡**할수록 학습 시 많은 시간이 소요되며, 결과 해석이 어렵다는 단점이 있습니다.
+**Deep Learning**은 **Machine Learning**의 한 분야로, **인공신경망(Neural Network)**을 기초로 하고 있습니다. 인공신경망은 사람의 신경망 원리와 구조를 모방하여 만든 **기계학습 알고리즘**입니다. 인공신경망은 기본적으로 **입력층(Input Layer)**, **은닉층(Hidden Layer)**, **출력층(Output Layer)**, 총 세 개의 계층으로 구성되어 있습니다. 그 중, 은닉층이 Deep하고 Wide하다는 특성을 하지고 있는 **Deep Neural Network(DNN)** 구조를 이용하였습니다. **수치예측**, 분류, 문자인식 혹은 이미지 트레이닝 같은 분야에서 **장점**이 있습니다. But, 신경망이 복잡할수록 학습 시 많은 시간이 소요되며, 결과 해석이 어렵다는 단점이 있습니다.  
 
-
+**Code(DNN) 코드의 일부분**
 ```python
 import tensorflow as tf  
 #중략···
@@ -81,13 +79,13 @@ L2 = tf.nn.dropout(L2, keep_prob)
 
 <br>
 
-<img src="{{ '/assets/img/grid.jpg' }}" style="width: 500px; height: auto;">
+<img src="{{ '/assets/img/grid.jpg' }}" style="width: 630px; height: auto;">
 <br>
-<img src="{{ '/assets/img/3dmodel.jpg' }}" style="width: 500px; height: auto;">
+<img src="{{ '/assets/img/3dmodel.jpg' }}" style="width: 630px; height: auto;">
 <br>
-<img src="{{ '/assets/img/unity3d.jpg' }}" style="width: 500px; height: auto;">
+<img src="{{ '/assets/img/unity3d.jpg' }}" style="width: 630px; height: auto;">
 
-건물을 **Grid**한 구역으로 나누고 셀마다 좌표를 설정하였습니다. **SketchUp** Tool을 사용하여 실제 환경과 최대한 동일하게 3D Model을 생성하였으며, **Unity**에서 해당 모델을 활용하였습니다.
+건물을 **Grid**한 구역으로 나누고 셀마다 좌표를 설정하였습니다. **SketchUp** Tool을 사용하여 실제 환경과 최대한 동일하게 3D Model을 생성하였으며, **Unity**에서 해당 모델을 활용하였습니다.  
 
 <br>
 <br>
