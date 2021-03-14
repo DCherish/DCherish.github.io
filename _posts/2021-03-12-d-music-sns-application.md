@@ -12,7 +12,9 @@ comments: true
 <img src="{{ '/assets/img/data.gif' }}" style="width: 600px; height: auto; margin-left: auto; margin-right: auto; display: block;">
 
 > 좋아하는 음악을, 여러 사람과 함께  
-> > 주변에게 알려주세요  
++ 무슨 list가 출력이 될까
+* 정말 궁금하다
+- 어떻게 나오지?
 
 *총 두 가지의 영상이 차례로 재생됩니다.*  
 
