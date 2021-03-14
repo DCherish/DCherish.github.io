@@ -52,4 +52,4 @@ comments: true
 </div>
 {% endif %}
 
-[sourcecode]: https://github.com/DCherish/G-Project
+[sourcecode]: /assets/resume.pdf
