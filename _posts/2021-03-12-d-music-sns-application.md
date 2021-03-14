@@ -2,7 +2,7 @@
 layout: page
 title:  "Music SNS Application"
 subtitle: "A SNS application with Music Recommendation"
-date:   2020-07-10 11:11:11 +0530
+date:   2021-03-12 11:11:11 +0530
 categories: ["project"]
 comments: true
 ---
