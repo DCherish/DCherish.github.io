@@ -45,6 +45,10 @@ comments: true
 <br>
 <br>
 
-
+{% if page.comments %}
+<div id="post-disqus" class="container">
+{% include disqus_comments.html %}
+</div>
+{% endif %}
 
 [sourcecode]: /assets/resume.pdf
