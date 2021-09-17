@@ -22,7 +22,3 @@ styles: [agate, androidstudio, arta, asceti, atelier-cave.dark, atelier-cave.lig
 # Build settings
 highlighter: null
 markdown: kramdown
-
-# Disqus settings
-disqus_url: https-dcherish-github-io.disqus.com
-disqus_shortname: https-dcherish-github-io
