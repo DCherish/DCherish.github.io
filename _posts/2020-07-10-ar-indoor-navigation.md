@@ -112,8 +112,6 @@ Deep Learning 학습 모델을 생성하기 위하여 많은 양의 Data가 필�
 위의 프로젝트를 보완하여 사용한다면 비용이 저렴하고 설치가 용이한 Beacon을 이용하여 다양한 실내 위치 서비스를 AR 형식으로 제공하기 때문에 사용자들의 편의성을 극대화할 수 있을 것입니다.  
 
 <br>
-<br>
-<br>
 
 <script src="https://utteranc.es/client.js"
         repo="DCherish/DCherish.github.io"
