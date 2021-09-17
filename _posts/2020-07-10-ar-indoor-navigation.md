@@ -117,7 +117,7 @@ Deep Learning 학습 모델을 생성하기 위하여 많은 양의 Data가 필�
 <br>
 
 <script src="https://utteranc.es/client.js"
-        repo="[ENTER REPO HERE]"
+        repo="DCherish/DCherish.github.io"
         issue-term="pathname"
         theme="boxy-light"
         crossorigin="anonymous"
