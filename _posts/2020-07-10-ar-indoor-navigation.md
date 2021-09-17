@@ -3,7 +3,7 @@ layout: page
 title:  "AR Indoor Navigation"
 subtitle: "A service application when someone is indoors by using AR tech"
 date:   2020-07-10 11:11:11 +0530
-categories: ["about project"]
+categories: ["a"]
 comments: true
 ---
 
