@@ -1,7 +1,7 @@
 ---
 layout: page
 title:  "Operating System"
-subtitle: "computer science of Operating System"
+subtitle: "Computer Science of Operating System"
 date:   2021-09-22 11:11:11 +0530
 categories: ["CS"]
 comments: true
