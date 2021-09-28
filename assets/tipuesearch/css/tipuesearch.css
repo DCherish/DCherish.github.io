@@ -12,9 +12,9 @@ http://www.tipue.com/search
 
 #tipue_search_input
 {
-     font: 600 14px/1.7 'Quicksand', sans-serif;
+     font: 550 14px/1.7 'Quicksand', sans-serif;
 }
-#tipue_search_foot_boxes
+#tipue_search_foot_boxes, .tipue_search_foot_boxes li, .tipue_search_foot_boxes li a, .tipue_search_foot_boxes li.current, .tipue_search_foot_boxes li a:hover
 {
      font: 100 15px/1.7 'Quicksand', sans-serif;
 }
