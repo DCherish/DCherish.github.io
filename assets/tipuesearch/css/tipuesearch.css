@@ -185,12 +185,12 @@ http://www.tipue.com/search
 }
 #tipue_search_foot_boxes li.current
 {
-     font: 850 10px/1.7 'Quicksand', sans-serif;
+     font: 850 16px/1.7 'Quicksand', sans-serif;
 	padding: 10px 17px 11px 17px;
      background: #f6f6f6;
      border: 1px solid #e3e3e3;
      border-radius: 1px;
-	color: rgb(255, 0, 0);
+	color: rgb(22, 198, 12);
 	margin-right: 7px;
 	text-align: center;
 }
