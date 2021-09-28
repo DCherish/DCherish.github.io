@@ -6,7 +6,7 @@
 <li class="menu__entry"><a href="{{ '/blog' | prepend: site.baseurl }}">Blog</a></li>
 </ul>
 </div>
-<ul class="social-links" style="float: right; clear: left">
+<ul class="social-links" style="float: right">
 {% if site.author.email %}
 <a href="mailto:{{ site.author.email }}" class="social-links__entry" target="_blank">
 <i class="fa fa-envelope-square"></i>
@@ -23,7 +23,7 @@
 </a>
 {% endif %}
 </ul>
-<div style="float: right; padding: 10px 0 0 0">
+<div style="float: right; padding: 100px 0 0 0">
     <form action="/search">
         <div class="tipue_search_right">
             <input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required>
