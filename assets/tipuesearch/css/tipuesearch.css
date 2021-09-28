@@ -55,12 +55,12 @@ http://www.tipue.com/search
 }
 .tipue_search_left
 {
-     display: inline-block;
+     float: left;
      padding: 5px 10px 0 0;
 }
 .tipue_search_right
 {
-     display: inline-block;
+     float: left;
 }
 
 
