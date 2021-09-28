@@ -14,9 +14,13 @@ http://www.tipue.com/search
 {
      font: 500 14px/1 'Quicksand', sans-serif;
 }
-#tipue_search_results_count, #tipue_search_warning, .tipue_search_content_url, .tipue_search_content_debug, .tipue_search_related_text
+#tipue_search_results_count, #tipue_search_warning, .tipue_search_content_debug, .tipue_search_related_text
 {
      font: 700 20px/1.7 'Quicksand', sans-serif;
+}
+.tipue_search_content_url
+{
+     font: 10 1px/1.7 'Quicksand', sans-serif;
 }
 .tipue_search_content_title
 {
