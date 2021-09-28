@@ -12,11 +12,11 @@ http://www.tipue.com/search
 
 #tipue_search_input
 {
-     font: 700 14px/1 'Quicksand', sans-serif;
+     font: 600 14px/1 'Quicksand', sans-serif;
 }
 #tipue_search_foot_boxes
 {
-     font: 500 15px/1 'Quicksand', sans-serif;
+     font: 100 15px/1 'Quicksand', sans-serif;
 }
 #tipue_search_results_count
 {
@@ -41,7 +41,7 @@ http://www.tipue.com/search
 }
 .tipue_search_content_bold, .tipue_search_related_bold
 {
-     font-weight: 1200;
+     font-weight: 999;
 }
 
 
@@ -68,12 +68,12 @@ http://www.tipue.com/search
 }
 .tipue_search_left
 {
-     display: inline-block;
+     float: right;
      padding: 6px 10px 0 0;
 }
 .tipue_search_right
 {
-     display: inline-block;
+     float: right;
      padding: 0;
 }
 
