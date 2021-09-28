@@ -138,7 +138,7 @@ http://www.tipue.com/search
 }
 .tipue_search_content_bold
 {
-     color: rgb(105, 68, 215);
+     color: rgb(22, 198, 12);
 }
 .tipue_search_content_debug
 {
@@ -147,7 +147,7 @@ http://www.tipue.com/search
 }
 .tipue_search_related_title
 {
-	color: rgb(105, 68, 215);
+	color: rgb(22, 198, 12);
      margin: 26px 0 7px 0;
 }
 .tipue_search_related_cols
@@ -187,12 +187,12 @@ http://www.tipue.com/search
 }
 #tipue_search_foot_boxes li.current
 {
-     font: 900 1px/1;
+     font: 850 18px/1.7;
 	padding: 10px 17px 11px 17px;
      background: #f6f6f6;
      border: 1px solid #e3e3e3;
      border-radius: 1px;
-	color: rgb(22, 198, 12);
+	color: rgb(105, 68, 215);
 	margin-right: 7px;
 	text-align: center;
 }
