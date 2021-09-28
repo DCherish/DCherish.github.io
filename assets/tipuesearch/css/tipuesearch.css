@@ -39,8 +39,8 @@ http://www.tipue.com/search
 {
      color: #333;
      max-width: 200px;
-	padding: 5px;
-	border: 50px solid #ff0000;
+	padding: 0px;
+	border: 1px solid #e3e3e3;
 	border-radius: 0;
 	-moz-appearance: none;
 	-webkit-appearance: none;
