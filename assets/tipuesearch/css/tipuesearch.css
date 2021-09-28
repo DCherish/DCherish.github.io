@@ -205,10 +205,8 @@ http://www.tipue.com/search
 
 .tipue_search_spinner
 {
-     position: absolute;
-     display: flex;
-     width: 200px;
-     height: 28px;
+     width: 50px;
+     height: 100px;
 }
 .tipue_search_spinner > div
 {
