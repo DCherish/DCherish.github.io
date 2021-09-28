@@ -6,15 +6,7 @@
 <li class="menu__entry"><a href="{{ '/blog' | prepend: site.baseurl }}">Blog</a></li>
 </ul>
 </div>
-<ul class="search-and-social-links">
-<form action="/search">
-    <div class="tipue_search_left">
-        <img src="/assets/tipuesearch/search.png" class="tipue_search_icon">
-    </div>
-    <div class="tipue_search_right">
-      <input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required></div>
-    <div style="clear: both;"></div>
-</form>
+<ul class="social-links-and-search">
 {% if site.author.email %}
 <a href="mailto:{{ site.author.email }}" class="social-links__entry" target="_blank">
 <i class="fa fa-envelope-square"></i>
@@ -30,5 +22,13 @@
 <i class="fa fa-linkedin"></i>
 </a>
 {% endif %}
+<form action="/search">
+    <div class="tipue_search_left">
+        <img src="/assets/tipuesearch/search.png" class="tipue_search_icon">
+    </div>
+    <div class="tipue_search_right">
+      <input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required></div>
+    <div style="clear: both;"></div>
+</form>
 </ul>
 </header>

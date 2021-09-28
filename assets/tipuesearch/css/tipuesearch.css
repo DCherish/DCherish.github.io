@@ -10,9 +10,13 @@ http://www.tipue.com/search
 /* fonts */
 
 
-#tipue_search_input, #tipue_search_foot_boxes
+#tipue_search_input
 {
-     font: 500 14px/1 'Quicksand', sans-serif;
+     font: 800 14px/1 'Quicksand', sans-serif;
+}
+#tipue_search_foot_boxes
+{
+     font: 500 15px/1 'Quicksand', sans-serif;
 }
 #tipue_search_results_count
 {
@@ -25,11 +29,11 @@ http://www.tipue.com/search
 }
 .tipue_search_content_url
 {
-     font: 1 1px/1 'Quicksand', sans-serif;
+     font: 300 14px/1.7 'Quicksand', sans-serif;
 }
 .tipue_search_content_title
 {
-     font: 200 32px/1.7 'Quicksand', sans-serif;
+     font: 300 32px/1.7 'Quicksand', sans-serif;
 }
 .tipue_search_content_text, .tipue_search_related_title
 {
@@ -37,7 +41,7 @@ http://www.tipue.com/search
 }
 .tipue_search_content_bold, .tipue_search_related_bold
 {
-     font-weight: 800;
+     font-weight: 900;
 }
 
 
@@ -120,14 +124,10 @@ http://www.tipue.com/search
      word-wrap: break-word;
      hyphens: auto;
 }
-.tipue_search_content_url a, .tipue_search_related_text a
+.tipue_search_content_url a, .tipue_search_related_text a, .tipue_search_content_url a:hover, .tipue_search_related_text a:hover, .tipue_search_related_before, .tipue_search_related_after
 {
-     color: #ffffff;
+     color: #0098fd;
      text-decoration: none;
-}
-.tipue_search_content_url a:hover, .tipue_search_related_text a:hover, .tipue_search_related_before, .tipue_search_related_after
-{
-     color: rgb(255, 255, 255);   
 }
 .tipue_search_content_text
 {
@@ -138,7 +138,7 @@ http://www.tipue.com/search
 }
 .tipue_search_content_bold
 {
-     color: #333;
+     color: rgb(22, 198, 12);
 }
 .tipue_search_content_debug
 {
@@ -147,7 +147,7 @@ http://www.tipue.com/search
 }
 .tipue_search_related_title
 {
-	color: #333;
+	color: rgb(22, 198, 12);
      margin: 26px 0 7px 0;
 }
 .tipue_search_related_cols
@@ -187,11 +187,12 @@ http://www.tipue.com/search
 }
 #tipue_search_foot_boxes li.current
 {
+     font: 700 14px/1;
 	padding: 10px 17px 11px 17px;
      background: #f6f6f6;
      border: 1px solid #e3e3e3;
      border-radius: 1px;
-	color: rgb(0, 180, 30);
+	color: rgb(22, 198, 12);
 	margin-right: 7px;
 	text-align: center;
 }
