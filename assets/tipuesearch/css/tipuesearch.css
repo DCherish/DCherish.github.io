@@ -155,7 +155,7 @@ http://www.tipue.com/search
 
 #tipue_search_foot
 {
-     font: 300 15px/1.7 'Quicksand', sans-serif;
+     font: 300 14px/1.7 'Quicksand', sans-serif;
      color: #333;
      margin: 51px 0 21px 0;
 }
@@ -205,8 +205,9 @@ http://www.tipue.com/search
 
 .tipue_search_spinner
 {
+     position: absolute;
      display: flex;
-     width: 50px;
+     width: 200px;
      height: 28px;
 }
 .tipue_search_spinner > div
