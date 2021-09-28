@@ -155,8 +155,8 @@ http://www.tipue.com/search
 
 #tipue_search_foot
 {
-     font: 850 1px/1.7 'Quicksand', sans-serif;
-     color: rgb(253, 97, 7);
+     font: 300 16px/1.7 'Quicksand', sans-serif;
+     color: #333;
      margin: 51px 0 21px 0;
 }
 #tipue_search_foot_boxes
