@@ -55,8 +55,8 @@ http://www.tipue.com/search
 }
 .tipue_search_left
 {
-     float: right;
-     padding: 5px 10px 0 0;
+     float: left;
+     padding: 6px 10px 0 0;
 }
 .tipue_search_right
 {
