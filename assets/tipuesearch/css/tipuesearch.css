@@ -12,23 +12,23 @@ http://www.tipue.com/search
 
 #tipue_search_input, #tipue_search_foot_boxes
 {
-     font: 300 14px/1 Roboto, sans-serif;
+     font: 500 14px/1 'Quicksand', sans-serif;
 }
-#tipue_search_results_count, #tipue_search_warning, .tipue_search_content_debug, .tipue_search_related_text
+#tipue_search_results_count, #tipue_search_warning, .tipue_search_content_url, .tipue_search_content_debug, .tipue_search_related_text
 {
-     font: 300 14px/1.7 Roboto, sans-serif;
+     font: 700 20px/1.7 'Quicksand', sans-serif;
 }
 .tipue_search_content_title
 {
-     font: 100 26px/1.7 'Quicksand', sans-serif;
+     font: 200 32px/1.7 'Quicksand', sans-serif;
 }
 .tipue_search_content_text, .tipue_search_related_title
 {
-     font: 300 15px/1.7 Roboto, sans-serif;
+     font: 500 15px/1.7 'Quicksand', sans-serif;
 }
 .tipue_search_content_bold, .tipue_search_related_bold
 {
-     font-weight: 400;
+     font-weight: 800;
 }
 
 
@@ -167,7 +167,7 @@ http://www.tipue.com/search
      background: #f6f6f6;
      border: 1px solid #e3e3e3;
      border-radius: 1px;
-	color: #333;
+	color: rgb(0, 180, 30);
 	margin-right: 7px;
 	text-align: center;
 }
@@ -229,9 +229,3 @@ http://www.tipue.com/search
           -webkit-transform: scaleY(1.0);
      }
 }
-
-
-
-
-
-
