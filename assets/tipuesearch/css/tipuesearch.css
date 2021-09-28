@@ -64,12 +64,13 @@ http://www.tipue.com/search
 }
 .tipue_search_left
 {
-     float: left;
+     /* float: left; */
      padding: 6px 10px 0 0;
 }
 .tipue_search_right
 {
-     float: right;
+     /* float: right; */
+     padding: 0;
 }
 
 
