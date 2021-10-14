@@ -2,25 +2,19 @@
 layout: page
 title:  "Data Structure"
 subtitle: "Computer Science of Data Structure"
-date:   2021-09-22 11:11:11 +0530
+date:   2021-10-14 11:11:11 +0530
 categories: ["CS"]
 comments: true
 ---
 
 <br>
 
-> Update 2021.10.10  
-
-*-ing*  
-
-<br>
-<br>
-
-### INTRODUCTION 💬
-
+### INTRODUCTION 💬  
+#### HiHi  
+##### HHII  
+## GIGI  
 -ing  
 
-<br>
 <br>
 
 ### CONFIGURATION ⚡
@@ -32,8 +26,9 @@ comments: true
 
 ### DISCUSSION ✍
 
--ing
+-ing  
 
+<br>
 <br>
 
 <script src="https://utteranc.es/client.js"
