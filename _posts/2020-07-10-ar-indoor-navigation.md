@@ -32,16 +32,16 @@ comments: true
 
 ### TECH STACK 👨‍💻
 
--[x] Jupyter Notebook  
--[x] TensorFlow  
--[x] Python  
--[x] Unity  
--[x] C#  
--[x] Eclipse  
--[x] Android Studio  
--[x] Java  
--[x] ARCore SDK (SLAM)  
--[x] SketchUp  
+◼️ Jupyter Notebook  
+◼️ TensorFlow  
+◼️ Python  
+◼️ Unity  
+◼️ C#  
+◼️ Eclipse  
+◼️ Android Studio  
+◼️ Java  
+◼️ ARCore SDK (SLAM)  
+- SketchUp  
 
 <br>
 <br>
