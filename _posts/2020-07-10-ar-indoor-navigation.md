@@ -103,6 +103,22 @@ L2 = tf.nn.dropout(L2, keep_prob)
 <br>
 <br>
 
+### TECH STACK 
+
+-[x] Jupyter Notebook
+-[x] TensorFlow
+-[x] Python
+-[x] Unity
+-[x] C#
+-[x] Eclipse
+-[x] Android Studio
+-[x] Java
+-[x] ARCore SDK (SLAM)
+-[x] SketchUp
+
+<br>
+<br>
+
 ### DISCUSSION ✍
 
 Deep Learning 학습 모델을 생성하기 위하여 많은 양의 Data가 필요하였습니다. 각 셀마다 약 60개의 블루투스 신호 세기들을 수집하였고 총 약 3만개의 데이터를 수집하였습니다. 중복되었거나 불안정한 데이터들을 처리하는 과정을 통하여 약 1만개 정도로 감소하였습니다.
