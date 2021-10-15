@@ -30,6 +30,22 @@ comments: true
 <br>
 <br>
 
+### TECH STACK 👨‍💻
+
+-[x] Jupyter Notebook  
+-[x] TensorFlow  
+-[x] Python  
+-[x] Unity  
+-[x] C#  
+-[x] Eclipse  
+-[x] Android Studio  
+-[x] Java  
+-[x] ARCore SDK (SLAM)  
+-[x] SketchUp  
+
+<br>
+<br>
+
 ### CONFIGURATION ⚡
 
 <div style="text-align : center;">
@@ -99,22 +115,6 @@ L2 = tf.nn.dropout(L2, keep_prob)
 
 
 건물을 **Grid**한 구역으로 나누고 셀마다 좌표를 설정하였습니다. **SketchUp** Tool을 사용하여 실제 환경과 최대한 동일하게 3D Model을 생성하였으며, **Unity**에서 해당 모델을 활용하였습니다.  
-
-<br>
-<br>
-
-### TECH STACK 👨‍💻
-
--[x] Jupyter Notebook  
--[x] TensorFlow  
--[x] Python  
--[x] Unity  
--[x] C#  
--[x] Eclipse  
--[x] Android Studio  
--[x] Java  
--[x] ARCore SDK (SLAM)  
--[x] SketchUp  
 
 <br>
 <br>
