@@ -103,18 +103,18 @@ L2 = tf.nn.dropout(L2, keep_prob)
 <br>
 <br>
 
-### TECH STACK 
+### TECH STACK 👨‍💻
 
--[x] Jupyter Notebook
--[x] TensorFlow
--[x] Python
--[x] Unity
--[x] C#
--[x] Eclipse
--[x] Android Studio
--[x] Java
--[x] ARCore SDK (SLAM)
--[x] SketchUp
+-[x] Jupyter Notebook  
+-[x] TensorFlow  
+-[x] Python  
+-[x] Unity  
+-[x] C#  
+-[x] Eclipse  
+-[x] Android Studio  
+-[x] Java  
+-[x] ARCore SDK (SLAM)  
+-[x] SketchUp  
 
 <br>
 <br>
