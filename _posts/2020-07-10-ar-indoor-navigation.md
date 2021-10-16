@@ -113,7 +113,6 @@ L2 = tf.nn.dropout(L2, keep_prob)
 
 <img src="{{ '/assets/img/unity3d.jpg' }}" style="width: 630px; height: auto; margin-left: auto; margin-right: auto; display: block;">
 
-
 건물을 **Grid**한 구역으로 나누고 셀마다 좌표를 설정하였습니다. **SketchUp** Tool을 사용하여 실제 환경과 최대한 동일하게 3D Model을 생성하였으며, **Unity**에서 해당 모델을 활용하였습니다.  
 
 <br>
@@ -127,6 +126,7 @@ Deep Learning 학습 모델을 생성하기 위하여 많은 양의 Data가 필�
 
 위의 프로젝트를 보완하여 사용한다면 비용이 저렴하고 설치가 용이한 Beacon을 이용하여 다양한 실내 위치 서비스를 AR 형식으로 제공하기 때문에 사용자들의 편의성을 극대화할 수 있을 것입니다.  
 
+<br>
 <br>
 
 <script src="https://utteranc.es/client.js"
