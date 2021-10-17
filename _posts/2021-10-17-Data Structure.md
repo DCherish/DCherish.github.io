@@ -210,7 +210,7 @@ comments: true
 
 ⚠️ Heap과 Stack은 같은 공간을 공유  
 ⚠️ Heap은 위쪽 주소부터 할당되며, Stack은 아래쪽부터 할당되는 방식  
-⚠️ 각 영역이 상대 공간을 침범하는 일이 발생할 수 있음
+⚠️ 각 영역이 상대 공간을 침범하는 일이 발생할 수 있음  
 ⚠️ 이를, Heap Overflow, Stack Overflow  
 ⚠️ Stack 영역이 크면 클수록 Heap 영역이 작아지고, 반대도 동일함  
 
@@ -234,6 +234,7 @@ comments: true
 ## Bubble Sort
 👉 O(n^2)  
 👉 stable sort  
+👉 in-place sort  
 👋 13 7 9 3 ➡️ 7 13 9 3 ➡️ 7 9 13 3 ➡️ 7 9 3 **13**  
 👋 7 9 3 **13** ➡️ 7 3 **9 13** ➡️ 3 **7 9 13** ➡️ **3 7 9 13**  
 👋 2개씩 지정, swap  
@@ -241,8 +242,9 @@ comments: true
 <br>
 
 ## Insertion Sort
-👉 O(n^2) ; Best일 경우 O(n)  
+👉 O(n^2) // Best일 경우 O(n)  
 👉 stable sort  
+👉 in-place sort  
 👉 거의 정렬이 되어 있을 경우 빠름  
 👋 **13** 7 9 3 ➡️ 13 **7** 9 3 ➡️ **7 13** 9 3  
 👋 7 13 **9** 3 ➡️ **7 9 13** 3 ➡️ 7 9 13 **3** ➡️ **3 7 9 13**  
@@ -253,6 +255,7 @@ comments: true
 ## Selection Sort
 👉 O(n^2)  
 👉 unstable sort  
+👉 in-place sort  
 👋 **13 9** 7 3 ➡️ **13** 9 **7** 3 ➡️ **13** 9 7 **3**  
 👋 **3** 9 7 **13** ➡️ 3 **9** **7** 13 ➡️ 3 **7 9** 13  
 👋 하나 기준, 제외 min/max 찾은 후 swap  
@@ -262,17 +265,19 @@ comments: true
 ## Merge Sort
 👉 O(nlogn)  
 👉 stable sort  
+👉 not in-place sort  
 👋 **7 2 9 4** ➡️ **7 2** | 9 4 ➡️ **7** | **2** | 9 4  
 👋 **2 7** | 9 4 ➡️ 2 7 | **9 4** ➡️ 2 7 | **9** | **4**  
 👋 2 7 | **4 9** ➡️ **2 4 7 9**  
 👋 먼저 반으로 나누고, 후에 병합  
-👋 병합 시 비교하며 순서에 맞게, temp 배열이 필요  
+👋 병합 시 비교하며 순서에 맞게 & temp 배열이 필요(not in-place)  
 
 <br>
 
 ## Quick Sort
-👉 O(nlogn) ; Worst일 경우  
+👉 O(nlogn) // Worst일 경우 O(n^2)  
 👉 unstable sort  
+👉 in-place sort  
 👋 3 7 8 1 5 9 6 10 2 4  
 👋 **3** '7' 8 1 5 9 6 10 2 "4"  
 👋 **3** '7' 8 1 5 9 6 10 "2" 4  
@@ -283,8 +288,137 @@ comments: true
 👋 **3** 2 "1" '8' 5 9 6 10 7 4  
 👋 **1** 2 "**3**" '8' 5 9 6 10 7 4  
 👋 **1** "'2'" | 3 | **8** '5' 9 6 10 7 "4"  
-👋 ...
+👋 ...  
+👋 3개의 포인터(p, l, r), l > r 되는 순간 swap(p, r) 
 
+<br>
+
+## Heap Sort
+👉 O(nlogn)  
+👉 unstable sort  
+👉 in-place sort  
+👋 3 7 8 1 5 9 6 10 2 4 ➡️ **1 2 6 3 4 9 8 10 7 5**  
+👋 **1** 2 6 3 4 9 8 10 7 **5** ➡️ **5** 2 6 3 4 9 8 10 7 **1**  
+👋 5 2 6 3 4 9 8 10 7 | 1 ➡️ **2 3 6 5 4 9 8 10 7** | 1  
+👋 **2** 3 6 5 4 9 8 10 **7** | 1 ➡️ **7** 3 6 5 4 9 8 10 **2** | 1  
+👋 7 3 6 5 4 9 8 10 | 2 1 ➡️ ...  
+👋 index 순으로 parent와 비교 후 swap -> heapify  
+👋 heapify 후 root와 end_index swap, end_index - 1까지 다시 heapify  
+👋 priority_queue의 원리  
+
+<br>
+
+### Shell Sort
+👉 O(n) ~ O(n^2) // Avg O(n^1.5)  
+👉 stable sort  
+👉 in-place sort  
+👋 삽입 정렬을 보완한 알고리즘  
+👋 따라서, 거의 정렬이 되어 있을 경우 가장 빠름  
+👋 삽입 정렬은 요소들이 삽입될 때, 이웃한 위치로 이동 // 삽입 정렬의 최대 문제점  
+👋 code  
+```c++
+void shellsort(int p[], int n)
+{
+	int s, j = 0;
+
+	for (int h = 1; h < n; h = 3 * h + 1)
+	{
+		s = h; // find h maxsize
+	}
+
+	for (int h = s; h > 0; h = h / 3) // h decrease, h는 size 개념
+	{
+		for (int i = h + 1; i <= n; i++)
+		{
+			int v = p[i]; // 하나 기준
+			j = i;
+
+			while (j > h && p[j - h] > v) // 기준보다 큰 것이 h칸 앞에 있다면
+			{
+				p[j] = p[j - h]; // swap
+				j = j - h; // h칸 앞으로
+			}
+
+			p[j] = v; // v go to p[j]
+		}
+	}
+}
+```  
+
+<br>
+
+### Counting Sort
+👉 O(n+k) // k가 클 경우 비효율적  
+👉 stable sort  
+👉 not in-place sort  
+👋 누적 합 techinc을 이용한 알고리즘  
+👋 잘 활용될 경우 꽤 유용한 sort  
+👋 적합하지 않을 경우 사용하면 매우 비 효율적  
+👋 code  
+```c++ (pseudo)
+void countingsort(A, B, C, min, max)
+{
+        for (i = min; i <= max; i++) C[i] = 0; // 초기화
+
+        for (i = 0; i < A.size; i++) C[A[i]]++; // ex) 해당 점수 개수 + 1
+
+        for (i = min + 1; i <= max; i++) C[i] += C[i - 1]; // 누적합
+        
+        for (i = A.size - 1; i >= 0; i++) // ex) A 역순으로 맞는 자리 찾아 B에 할당 & 해당 점수 개수 - 1
+        {
+                 B[C[A[i]]] = A[i];
+                 C[A[i]]--;
+        }
+}
+```  
+
+<br>
+
+### Radix Sort
+👉 O(n) // 정확하게는 O(d(n+k))  
+👉 must be stable  
+👉 not in-place sort  
+👋 countingsort 이용한 알고리즘 (k)  
+👋 k는 0-9 or a-z ...  
+👋 각 기수 정렬 시 ㅇㅇ  
+👋 code  
+```c++
+void Radix_Sort()
+{
+        int Radix = 1;
+    
+        while (true) // d 계산 (최대 자리수)
+        {
+                if (Radix >= Max_Value) break; // Max_Value는 배열 중 최대값
+                Radix = Radix * 10;        
+        }
+
+        for (int i = 1; i < Radix; i = i * 10) // 1의 자리부터 10씩 곱하면서 최대자릿수 까지 반복
+        {
+                for (int j = 0; j < MAX; j++) // 모든 배열 탐색
+                {
+                        int K;
+                        if (Arr[j] < i) K = 0; // 만약 현재 배열 값 해당 자릿수보다 작으면 0
+                        else K = (Arr[j] / i) % 10; // 그게 아니라면 배열 기수 삽입
+                        Q[K].push(Arr[j]); // Queue에 순차 저장
+                }
+
+                int Idx = 0;
+                
+                for (int j = 0; j < 10; j++) // Queue에 저장된 값들 순차적으로 빼내기
+                {
+                        while (Q[j].empty() == 0) // 해당 Index번호의 Queue가 빌 때 까지 반복
+                        {
+                                Arr[Idx] = Q[j].front(); // 하나씩 빼며 배열에 다시 저장
+                                Q[j].pop();
+                                Idx++;
+                        }
+                }
+        }
+}
+```  
+
+<br>
 
 
 
