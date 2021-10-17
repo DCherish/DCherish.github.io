@@ -2,7 +2,7 @@
 layout: page
 title:  "Data Structure"
 subtitle: "Computer Science of Data Structure"
-date:   2021-10-17 11:11:11 +0530
+date:   2021-10-18 11:11:11 +0530
 categories: ["CS"]
 comments: true
 ---
@@ -160,6 +160,11 @@ comments: true
 
 <br>
 
+## Interpreter
+👉 고급 언어로 작성된 코드를 한 줄씩 읽어 내려가며 실행하는 프로그램  
+
+<br>
+
 ## Compile Error
 👉 컴파일시 발생하는 에러, 주로 syntax 오류로 인해 발생하는 에러  
 
@@ -225,9 +230,17 @@ comments: true
 <br>
 
 ## using namespace std
-👉 std ; C++ 표준라이브러리의 모든 것은 std라는 namespace에 존재  
+👉 std ; C++ 표준 라이브러리의 모든 것은 std라는 namespace에 존재  
 👉 namespace ; 모든 식별자(변수, 함수)가 고유하도록 보장하는 코드 영역  
 👉 using ; 사용하겠다  
+
+<br>
+
+## Library
+👉 자주 사용하는 코드를 함수로 가공하여 정리해 놓은 것을 재사용할 수 있게끔 해놓은 일종의 코드 모음집  
+
+## Framework
+👉 소프트웨어의 구체적인 부분에 해당하는 설계와 구현을 재사용이 가능하게끔 일련의 협업화된 형태로 클래스들을 제공하는 것  
 
 <br>
 
@@ -351,9 +364,10 @@ void shellsort(int p[], int n)
 👉 O(n+k) // k가 클 경우 비효율적  
 👉 stable sort  
 👉 not in-place sort  
-👋 누적 합 techinc을 이용한 알고리즘  
-👋 잘 활용될 경우 꽤 유용한 sort  
-👋 적합하지 않을 경우 사용하면 매우 비 효율적  
+👋 누적 합 technic을 이용한 알고리즘  
+👋 정렬하는 숫자가 특정한 범위 내에 있을 때 꽤 유용한 sort  
+👋 범위가 크거나 적합하지 않을 경우 사용하면 매우 비 효율적  
+👋 또한, 메모리 낭비가 심할 수 있음  
 👋 code (pseudo)  
 ```c++
 void countingsort(A, B, C, min, max)
@@ -378,7 +392,7 @@ void countingsort(A, B, C, min, max)
 👉 O(n) // 정확하게는 O(d(n+k))  
 👉 must be stable  
 👉 not in-place sort  
-👋 k는 10 (0-9) or 26 (a-z) ...    
+👋 k는 10 (0-9) or 26 (a-z) ...  
 👋 code  
 ```c++
 void Radix_Sort()
@@ -388,7 +402,7 @@ void Radix_Sort()
         while (true) // d 계산 (최대 자리수)
         {
                 if (Radix >= Max_Value) break; // Max_Value는 배열 중 최대값
-                Radix = Radix * 10;        
+                Radix = Radix * 10;
         }
 
         for (int i = 1; i < Radix; i = i * 10) // 1의 자리부터 10씩 곱하면서 최대자릿수 까지 반복
@@ -436,11 +450,196 @@ void Radix_Sort()
 👉 정렬은 오래 전부터 연구되었던 분야이기에 매우 개선된 Quick Sort가 C++ sort()로 제공되고 있음  
 👋 Median-of-Three, random pivot, Insert Sort와의 응용(일반적 size 기준 200, 작으면 Insert 크면 Quick) 등  
 
+<br>
 
+## Binary Search
+👉 O(logn)  
+👉 완전 탐색에 비해 압도적으로 빠름  
+👉 left, right로 mid를 설정  
+👉 mid와 탐색했던 key 값과 비교  
+👉 key 값이 mid보다 크다면, left = mid + 1  
+👉 key 값이 mid보다 낮다면, right = mid - 1  
+👉 key 값이 mid와 같다면, 탐색 완료  
+👋 sort가 되어 있다는 가정 하에 탐색이 가능함  
 
+<br>
 
+## Bitmasking
+👉 0과 1로 flag를 활용하는 technic  
+👉 집합의 요소들의 구성 여부를 표현할 때 유용한 technic  
+👉 보통 AND, OR, XOR, NOT, <<(LS), >>(RS) 연산자와 자주 쓰임  
+👉 작은 메모리와 빠른 수행시간으로 해결이 가능  
+👉 일반적으로 원소의 수가 작을 경우에 사용  
+👋 0번, 3번, 5번 visit / else not visit  
+👋 101001(2) -> 41(10)을 활용  
 
+<br>
 
+## Dijkstra Algorithm
+👉 최단 경로 탐색 알고리즘  
+👉 DP와 Priority Queue를 활용하여 구현이 가능  
+
+<br>
+
+## 최소 신장 트리(MST, Minimum Spanning Tree)
+👉 최소 비용의 스패닝 트리를 구현하는 것  
+👋 Kruskal, Prim  
+
+<br>
+
+## Kruskal Algorithm
+👉 최소 비용 신장 트리를 만드는 알고리즘  
+👉 간선 우선 및 cycle 방지의 특징이 있음  
+👉 Union-Find(Disjoint-Set)을 이용하여 cycle을 검사함  
+
+<br>
+
+## Prim Algorithm
+👉 최소 비용 신장 트리를 만드는 알고리즘  
+👉 임의 정점을 시작으로, 정점 우선 및 cycle 방지의 특징이 있음  
+👉 MST를 확장해나가는 조건이 아직 연결이 안된 정점에 대해서 확장을 진행하므로 cycle이 발생하지 않음  
+
+<br>
+
+## Dynamic Programming
+👉 복잡한 문제를 간단한 여러 개의 하위 문제로 나누어 푸는 방법  
+👉 같은 하위 문제를 가지고 있는 경우, 결과 값을 저장하여 단 한 번만 계산하도록 구현, 이를 memoization  
+👉 주로, 점화식을 통해 문제를 해결  
+👉 재귀를 이용하는 Top-down, 반복문을 이용하는 Bottom-Up 두 가지의 방식이 있음  
+👋 Bottom-Up 방식으로 해결하는 것이 권장됨  
+👋 스택의 크기가 한정되어 있으므로, 시스템상 재귀를 이용할 경우 불리할 수 밖에 없음  
+
+<br>
+
+## LinkedList
+👉 연속적인 메모리 위치에 저장되지 않는 선형 데이터 구조  
+👉 배열의 크기는 정해져 있고, 새로운 요소를 삽입하는 것에 비용이 많이 들기에 LinkedList를 사용  
+👉 즉, 동적인 크기와 삽입/삭제에 용이  
+👉 임의로 액세스를 허용할 수 없어, 첫 번째 노드부터 순차적으로 요소에 액세스 하므로 탐색에 있어 불리  
+👉 포인터를 사용하므로 메모리 공간이 각 요소에 필요  
+
+<br>
+
+## Array 🆚 List
+#### - Array
+👉 크기가 정해져 있으며(수정 불가), stack 영역에 메모리 할당  
+👉 삽입과 삭제시 비용이 크지만 인덱스를 이용한 검색이 최적화  
+👉 연속적이므로 메모리 관리가 편리  
+👋 배열은 메모리 공간에 연속적으로 있기 때문에 해당 주소값 + (AxN)byte로 검색  
+#### - List
+👉 크기가 고정적이지 않으며, heap 영역에 메모리 할당  
+👉 삽입과 삭제시 전후 노드의 참조 관계만 수정하면 되기 때문에 효율적  
+👉 첫 번째 노드부터 순차적으로 요소에 액세스 하므로 검색은 비효율적  
+👋 리스트는 메모리 공간에 연속적으로 있지 않기 때문에 포인터를 따라가며 그만큼 시간이 소요됨  
+
+<br>
+
+## Stack
+👉 입력과 출력이 한 곳(방향)으로 이루어지는 자료구조  
+👉 LIFO(Last In First Out) 특징을 가지고 있음  
+👋 웹 페이지(돌아가기, 돌아가기 Undo) 적합  
+
+<br>
+
+## Queue
+👉 입력과 출력이 한 쪽 끝으로 이루어지는 자료구조  
+👉 FIFO(First In First Out) 특징을 가지고 있음  
+👋 버퍼에 저장되어 들어온 순으로 처리하는 방식에 적합  
+
+<br>
+
+## Deque
+👉 입력과 출력이 양방향 모두 가능한 자료구조  
+👋 구현이 어려울 뿐, Queue & Stack 모두의 특성을 가지고 있음  
+
+<br>
+
+## Tree
+👉 값을 가진 Node와 이들을 연결해주는 Edge로 이루어진 자료구조  
+👉 cycle이 존재할 수 없으며, cycle이 존재할 경우 그것은 graph 자료구조  
+👋 index를 통한 빠른 접근에 적합  
+
+<br>
+
+## Graph
+👉 값을 가진 Vertex와 이들을 연결해주는 Edge로 이루어진 자료구조  
+👉 두 Vertex를 연결하는 Edge에 방향이 있는 경우 방향 그래프  
+👉 두 Vertex를 연결하는 Edge에 방향이 없는 경우 무방향 그래프  
+👉 두 Vertex를 연결하는 Edge에 비용이 존재할 경우 가중치 그래프  
+👋 cycle 관계의 data 관리에 적합  
+
+<br>
+
+## Hash
+👉 연관배열 구조를 이용하여 key에 결과 값(value)를 저장하는 자료구조  
+👉 해시 함수를 구현하여 데이터 값(key)을 해시 값으로 Mapping  
+👉 적은 자원으로 많은 데이터를 효율적으로 관리하기 위해 사용  
+👋 index를 통한 빠른 접근에 적합  
+👋 key; 해시 함수의 input  
+👋 hash; 해시 함수의 결과물, 저장소(Slot)에서 value와 매칭되어 저장  
+👋 value; 저장소에 최종적으로 저장되는 값으로 키와 매칭되어 있음  
+
+<br>
+
+## Map 🆚 HashMap
+👉 구현 알고리즘의 차이가 있음  
+👉 Map은 RB Tree에 기반을 두고 있음  
+👉 HasgMap은 Hash에 기반을 두고 있음  
+
+<br>
+
+## Set
+👉 중복을 허용하지 않고, 순서 없이 key를 저장하는 집합 개념의 자료구조  
+
+<br>
+
+## Map
+👉 key를 기준으로 데이터를 정렬하며, key와 value를 원소로 저장하는 자료구조  
+
+<br>
+
+## Trie
+👉 문자열에서 검색을 빠르게 도와주는 자료구조  
+
+<br>
+
+## Binary Search Tree
+👉 이진 탐색의 빠른 탐색이 가능한 장점과 연결 리스트의 빠른 삽입 및 삭제가 가능한 장점을 동시에 갖고 있는 자료구조  
+👉 각 노드 기준으로 왼쪽 자식은 작은 값을 갖고 있고, 오른쪽 자식은 큰 값을 갖고 있음  
+👉 검색 목적 자료구조이므로 중복이 있거나 많을 경우 비효율적, 중복이 없어야 함  
+👋 중위 순회로 정렬된 순서를 읽을 수 있음  
+
+<br>
+
+## B Tree & B+ Tree
+👉 이진 트리는 하나의 부모가 두 개의 자식밖에 가지질 못하므로, 균형이 맞지 않을 때 검색 효율이 선형검색 급으로 매우 떨어짐  
+👉 B Tree는 데이터베이스, 파일 시스템에서 널리 사용되는 자료구조, 이진 트리를 확장하여 더 많은 자식의 수를 가질 수 있도록 일반화 시킨 것  
+👉 트리의 균형이 항상 맞다는 특성을 가지고 있음  
+👉 B+ Tree는 데이터의 빠른 접근을 위해 B Tree와 LinkedList를 응용하여 인덱스 역할만 하는 비단말 노드가 추가로 구현  
+👉 B Tree는 각 노드에 데이터가 저장되는 반면, B+ Tree는 index 노드와 leaf 노드로 분리되어 저장됨  
+
+<br>
+
+## RB Tree(Red-Black Tree)
+👉 각 노드는 red or black의 색을 가짐  
+👉 root node의 색은 항상 black  
+👉 각 leaf node의 색은 black  
+👉 어떤 노드의 색이 red라면 두 개의 child node의 색은 모두 black  
+👉 모든 leaf node에서 root node까지 가는 경로에서 만나는 black 노드의 개수는 동일  
+👉 이러한 특성을 만족하는 BST를 RB Tree  
+👉 삽입되는 모든 노드의 색은 red, 하지만 조건을 만족하기 위해 경우에 따라 recoloring 혹은 restructuring 적용  
+
+<br>
+
+## Hash Table 충돌 방지 기법
+👋 해시 충돌; 다른 내용의 데이터 값이 해시 값으로 Mapping 했을 때 같아진 상황  
+👋 너무 많은 해시 충돌은 Hash Table의 성능을 저하  
+👋 해시 함수를 잘 정의하여 해시 충돌을 최소화 해야함  
+👉 1. Chaining; 해시 충돌이 발생하면 LinkedList로 데이터들을 연결하는 방식  
+👉 2. Open Addressing; 해시 충돌이 일어나면 다른 버켓에 데이터를 삽입하는 방식  
+　　👉 1) 선형 탐색; 다음 버켓 혹은 몇 개를 건너뛰어 데이터를 삽입  
+　　👉 2) 제곱 탐색; 제곱만큼 건너뛴 버켓에 데이터를 삽입  
+　　👉 3) 이중 해시; 다른 해시함수를 한 번 더 적용한 결과를 이용  
 
 <br>
 <br>
