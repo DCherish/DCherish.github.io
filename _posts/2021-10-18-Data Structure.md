@@ -511,6 +511,12 @@ void Radix_Sort()
 
 <br>
 
+## Divide and Conquer
+👉 한 문제를 비슷한 여러 개의 하위 문제로 나누어 재귀적으로 해결하고 이를 합쳐 원래 문제를 해결하는 방법  
+👋 Merge Sort, Quick Sort  
+
+<br>
+
 ## LinkedList
 👉 연속적인 메모리 위치에 저장되지 않는 선형 데이터 구조  
 👉 배열의 크기는 정해져 있고, 새로운 요소를 삽입하는 것에 비용이 많이 들기에 LinkedList를 사용  
