@@ -354,8 +354,8 @@ void shellsort(int p[], int n)
 👋 누적 합 techinc을 이용한 알고리즘  
 👋 잘 활용될 경우 꽤 유용한 sort  
 👋 적합하지 않을 경우 사용하면 매우 비 효율적  
-👋 code  
-```c++ (pseudo)
+👋 code (pseudo)  
+```c++
 void countingsort(A, B, C, min, max)
 {
         for (i = min; i <= max; i++) C[i] = 0; // 초기화
@@ -378,9 +378,7 @@ void countingsort(A, B, C, min, max)
 👉 O(n) // 정확하게는 O(d(n+k))  
 👉 must be stable  
 👉 not in-place sort  
-👋 countingsort 이용한 알고리즘 (k)  
-👋 k는 0-9 or a-z ...  
-👋 각 기수 정렬 시 ㅇㅇ  
+👋 k는 10 (0-9) or 26 (a-z) ...    
 👋 code  
 ```c++
 void Radix_Sort()
@@ -419,6 +417,24 @@ void Radix_Sort()
 ```  
 
 <br>
+
+## 왜 Heap Sort 대신 Quick Sort를 사용?
+👉 Big-O notation은 대략적인 측정 방법  
+👉 평균적으로 성능적 측면에서 Quick이 더 우수  
+👉 Heapify, n이 크면 클수록 이 과정이 꽤 영향을 미치기에 Quick이 우수  
+
+<br>
+
+## 왜 Merge Sort 대신 Quick Sort를 사용?
+👉 Big-O notation은 대략적인 측정 방법  
+👉 평균적으로 성능적 측면에서 Quick이 더 우수  
+👉 not in-place, 분할 및 병합 과정이 꽤 영향을 미치기에 Quick이 우수  
+
+<br>
+
+## 왜 C++ sort는 Quick? 성능이 낮지 않을까?
+👉 정렬은 오래 전부터 연구되었던 분야이기에 매우 개선된 Quick Sort가 C++ sort()로 제공되고 있음  
+👋 Median-of-Three, random pivot, Insert Sort와의 응용(일반적 size 기준 200, 작으면 Insert 크면 Quick) 등  
 
 
 
