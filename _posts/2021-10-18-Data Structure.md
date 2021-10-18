@@ -246,6 +246,12 @@ comments: true
 
 <br>
 
+## Library 🆚 Framework
+👉 라이브러리 : 사용자가 흐름에 대한 제어를 하며 필요한 상황에 가져다가 쓸 수 있음  
+👉 프레임워크 : 전체적인 흐름을 자체적으로 제어함  
+
+<br>
+
 ## Bubble Sort
 👉 O(n^2)  
 👉 stable sort  
