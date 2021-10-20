@@ -91,7 +91,7 @@ comments: true
 <br>
 
 ## Context Switching ✔️
-👉 하나의 Task가 CPU를 사용 중인 상태에서 Interrupt 요청에 의해 다른 Task로 실행이 전환되는 과정에서 기존의 Task 상태 및 Register 값들에 대한 정보(Context)를 저장하고 새로운 Task의 Context로 교체하는 작업  
+👉 하나의 Task가 CPU를 사용 중인 상태에서 다른 Task가 CPU를 사용하도록 하기 위해 기존의 Task 상태 및 Register 값들에 대한 정보(Context)를 저장하고 새로운 Task의 Context로 교체하는 작업  
 👉 Process와 Thread를 처리하는 Context Switching은 조금 다름  
 　　👉 Process는 OS에 의해 스케쥴링 되는 PCB를 통해 관리  
 　　👉 Thread는 Process내의 TCB(Task Control Block)라는 내부 구조를 통해 관리  
