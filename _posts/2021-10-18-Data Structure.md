@@ -43,7 +43,7 @@ comments: true
 <br>
 
 ## 프로그래밍 패러다임
-👉 프로그래머에게 프로그래밍의 관점을 갖게하고 코드를 어떻게 작성할 지 결정하는 역할  
+👉 프로그래머에게 프로그래밍의 관점을 갖게하고 코드를 어떻게 작성할 지 결정하는 역할을 함  
 　　👉 명령형 프로그래밍  
 　　　　👉 무엇(What)을 할 것인지를 나타내기보다 어떻게(How) 할 것인지를 설명하는 방식  
 　　　　　　👉 객체 지향 프로그래밍 ✔️  
@@ -67,18 +67,18 @@ comments: true
 <br>
 
 ## 객체 지향 프로그래밍의 5가지 키워드 ✔️
-👉 클래스/객체, 추상화, 캡슐화, 상속, 다형성  
+👉 클래스/객체, 추상화, 다형성, 상속, 캡슐화  
 
 <br>
 
 ## Class ✔️
-👉 어떠한 객체를 만들기 위해 변수와 메서드를 정의하는 틀  
+👉 어떠한 객체를 만들기 위해 변수와 메서드를 정의한 틀  
 
 <br>
 
 ## Object 🆚 Instance ✔️
 👋 An Object is an Instance of a Class  
-👋 a = Cookie() // a 객체는 Cookie 클래스의 인스턴스  
+✋ a = Cookie() // a 객체는 Cookie 클래스의 인스턴스  
 👉 Object  
 　　👉 소프트웨어 세계에 구현할 대상  
 　　✋ 클래스의 타입으로 선언되었을 때  
@@ -137,7 +137,7 @@ comments: true
 　　👉 개방-폐쇄 원칙(Open Closed Principle) : 기존의 코드를 변경하지 않으면서 기능을 추가할 수 있도록 설계되어야 함  
 　　👉 리스코프 치환 원칙(Liskov Substitution Principle) : 일반화 관계에 대한 이야기, 자식 클래스는 최소한 자신의 부모 클래스에서 가능한 행위는 수행할 수 있어야 함  
 　　👉 인터페이스 분리 원칙(Interface Segregation Principle) : 인터페이스를 클라이언트에 특화되도록 분리시키라는 설계 원칙  
-　　👉 의존 역전 원칙(Dependency Inversion Principle) : 의존 관계를 맺을 때 변화하기 쉬운 것 또는 자주 변화하는 것보다는 변화하기 어려운 것, 거의 변화가 없는 것에 의존하라는 것  
+　　👉 의존 역전 원칙(Dependency Inversion Principle) : 의존 관계를 맺을 때 변화하기 어려운 것, 거의 변화가 없는 것에 의존하라는 것  
 
 <br>
 
@@ -199,7 +199,7 @@ comments: true
 
 ## Template(C++)
 👉 함수와 클래스가 제네릭 형과 동작할 수 있게 도와주는 C++ 프로그래밍 언어의 기능  
-👋 Templates are a feature of the C++ Programming language that allows functions and classes to operate with generic types  
+✋ Templates are a feature of the C++ Programming language that allows functions and classes to operate with generic types  
 
 <br>
 
@@ -213,15 +213,16 @@ comments: true
 
 ## 메모리 구조 ✔️
 👉 Code  
-　　👉 작성한 소스코드가 들어가는 부분, 텍스트 영역  
+　　👉 작성한 소스코드가 들어가는 텍스트 영역  
 　　✋ 실행 파일을 구성하는 구성하는 명령어들이 올라가는 메모리 영역  
 　　👋 함수, 제어문, 상수 등이 이곳에 지정됨  
 👉 Data  
 　　👉 프로그램의 시작과 동시에 할당되고, 프로그램이 종료되어야 소멸되는 영역  
 　　👋 전역변수와 static 변수가 이곳에 할당  
 👉 Heap  
-　　👉 프로그래머가 할당/해제하는 메모리 영역, 이 공간에 메모리 할당하는 것을 동적 할당이라고 함  
+　　👉 프로그래머가 할당/해제하는 메모리 영역  
 　　👉 런 타임에 크기가 결정됨  
+　　👋 이 공간에 메모리 할당하는 것을 동적 할당이라고 함  
 👉 Stack  
 　　👉 프로그램이 자동으로 사용하는 임시 메모리 영역  
 　　👉 컴파일 타임에 크기가 결정됨  
@@ -262,7 +263,7 @@ comments: true
 
 <br>
 
-## Library 🆚 Framework
+## Framework 🆚 Library
 👉 Framework : 전체적인 흐름을 자체적으로 제어함  
 👉 Library : 사용자가 흐름에 대한 제어를 하며 필요한 상황에 가져다가 쓸 수 있음  
 
@@ -291,7 +292,7 @@ comments: true
 <br>
 
 ## Selection Sort
-👉 O(n^2)**  
+👉 O(n^2)  
 👉 unstable sort // 2 2 1 3  
 👉 in-place sort  
 ✋ **13 9** 7 3 ➡️ **13** 9 **7** 3 ➡️ **13** 9 7 **3**  
@@ -642,7 +643,8 @@ void Radix_Sort()
 ✋ 이진 트리는 하나의 부모가 두 개의 자식밖에 가지질 못하므로, 균형이 맞지 않을 때 검색 효율이 선형검색 급으로 매우 떨어짐  
 👉 B Tree는 이진 트리를 확장하여 더 많은 자식의 수를 가질 수 있도록 일반화 시킨 자료구조  
 👉 트리의 균형이 항상 맞다는 특성을 가지고 있음  
-👉 B+ Tree : CS-DB Check  
+👉 B+ Tree는 B Tree를 개선한 자료구조  
+👉 B+ Tree의 leaf node들은 LinkedList로 연결되어 있어 순차 검색이 용이함  
 👋 B Tree는 각 노드에 데이터가 저장되는 반면, B+ Tree는 index 노드와 leaf 노드로 분리되어 저장됨  
 
 <br>
