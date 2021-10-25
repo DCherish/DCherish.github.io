@@ -183,7 +183,7 @@ comments: true
 
 ## FIFO, FCFS(First Come First Served) 스케쥴링
 👉 먼저 온 프로세스 먼저 처리하는 방식  
-　　👋 중요한이 작업 오래 기다릴 수 있음  
+　　👋 중요한 작업이 오래 기다릴 수 있음  
 
 <br>
 
