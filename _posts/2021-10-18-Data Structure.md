@@ -16,7 +16,7 @@ comments: true
 
 <br>
 
-## Call-by-Value Call-by-Reference ✔️
+## Call-by-Value 🆚 Call-by-Reference ✔️
 👉 Call-by-Value  
 　　👉 함수 호출 시 인자로 값(Value)을 넘겨주는 방식  
 　　👉 데이터를 복사하는 과정에서 발생  
