@@ -476,7 +476,7 @@ void Radix_Sort()
 
 ## 왜 C++ sort는 Quick? 성능이 낮지 않을까?
 👉 정렬은 오래 전부터 연구되었던 분야이기에 매우 개선된 Quick Sort가 C++ sort()로 제공되고 있음  
-✋ Median-of-Three, random pivot, Insert Sort와의 응용(일반적 size 기준 200, 작으면 Insert 크면 Quick) 등  
+✋ Median-of-Three, random pivot, Insertion Sort와의 응용(일반적 size 기준 200, 작으면 Insert 크면 Quick) 등  
 
 <br>
 
