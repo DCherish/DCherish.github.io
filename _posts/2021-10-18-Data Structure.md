@@ -103,7 +103,6 @@ comments: true
 　　👉 소프트웨어 세계에 구현된 실체  
 　　✋ 객체가 메모리에 할당되어 실제 사용될 때  
 
-
 <br>
 
 ## 데이터 추상화(Data Abstraction) ✔️
