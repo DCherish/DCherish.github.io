@@ -31,7 +31,7 @@ comments: true
 
 ## 상속과 객체 포인터
 👉 상속받은 Base 클래스 타입의 포인터로 Derived 클래스의 객체를 가르킬 수 있지만, 참조 가능한 영역은 Base 클래스 멤버 함수와 변수에 제한됨  
-👉 [Link][https://parksh86.tistory.com/35?category=660881] 참조  
+👉 관련 자세한 내용 : [Link][Link1]  
 
 <br>
 
@@ -744,3 +744,5 @@ void Radix_Sort()
         crossorigin="anonymous"
         async>
 </script>
+
+[Link1]: https://parksh86.tistory.com/35?category=660881
