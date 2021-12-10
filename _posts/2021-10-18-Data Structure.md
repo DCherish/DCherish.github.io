@@ -30,32 +30,32 @@ comments: true
 <br>
 
 ## 생성자 및 소멸자 🔥
-👋 [Link][Link2]  
+👋 [Link][Link1]  
 
 <br>
 
 ## 상속과 객체 포인터 🔥
-👋 [Link][Link1]  
+👋 [Link][Link2]  
+
+<br>
+
+## virtual 🔥
+👋 [Link][Link5]  
 
 <br>
 
 ## 타입변환 연산자
 👉 static_cast  
 　　👉 컴파일 타임에 형변환에 대한 타입 오류를 잡아줌  
-　　👋 double d = 10.1234;  
-　　👋 int a = static_cast<int>(d); // 10  
-　　👋 double* d = new double(10.1234);  
-　　👋 int* a = static_cast<int*>(d); // error  
-　　👋 오류를 잡아줌으로써 버그를 미연에 방지  
 👉 dynamic_cast  
 　　👉 -  
-　　👋 -  
 👉 upcast  
 　　👉 부모 클래스의 포인터로 자식 클래스를 인자로 받을 경우  
-　　👋 Animal* A = new Cat("나비");  
 👉 downcast  
 　　👉 부모 클래스의 포인터 변수를 자식 클래스로 바꿔주는 경우  
-　　👋 Dog* D = static_cast<Dog*>(A);  
+👋 [Link][Link3]  
+👋 [Link][Link4]  
+
 
 <br>
 
@@ -740,5 +740,8 @@ void Radix_Sort()
         async>
 </script>
 
-[Link1]: https://parksh86.tistory.com/35?category=660881
-[Link2]: https://velog.io/@underlier12/C-03-%EC%83%9D%EC%84%B1%EC%9E%90%EC%99%80-%EC%86%8C%EB%A9%B8%EC%9E%90
+[Link1]: https://velog.io/@underlier12/C-03-%EC%83%9D%EC%84%B1%EC%9E%90%EC%99%80-%EC%86%8C%EB%A9%B8%EC%9E%90
+[Link2]: https://parksh86.tistory.com/35?category=660881
+[Link3]: https://hwan-shell.tistory.com/211
+[Link4]: https://viera.tistory.com/3
+[Link5]: https://modoocode.com/211
