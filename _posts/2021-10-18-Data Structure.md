@@ -40,7 +40,7 @@ comments: true
 <br>
 
 ## virtual 🔥
-👋 [Link][Link5]  
+👋 [Link][Link4]  
 
 <br>
 
@@ -48,13 +48,12 @@ comments: true
 👉 static_cast  
 　　👉 컴파일 타임에 형변환에 대한 타입 오류를 잡아줌  
 👉 dynamic_cast  
-　　👉 -  
+　　👉   
 👉 upcast  
 　　👉 부모 클래스의 포인터로 자식 클래스를 인자로 받을 경우  
 👉 downcast  
 　　👉 부모 클래스의 포인터 변수를 자식 클래스로 바꿔주는 경우  
 👋 [Link][Link3]  
-👋 [Link][Link4]  
 
 
 <br>
@@ -743,5 +742,4 @@ void Radix_Sort()
 [Link1]: https://velog.io/@underlier12/C-03-%EC%83%9D%EC%84%B1%EC%9E%90%EC%99%80-%EC%86%8C%EB%A9%B8%EC%9E%90
 [Link2]: https://parksh86.tistory.com/35?category=660881
 [Link3]: https://hwan-shell.tistory.com/211
-[Link4]: https://viera.tistory.com/3
-[Link5]: https://modoocode.com/211
+[Link4]: https://modoocode.com/211
