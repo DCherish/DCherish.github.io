@@ -44,7 +44,7 @@ comments: true
 
 <br>
 
-## 타입변환 연산자
+## 타입변환 연산자 🔥
 👉 static_cast  
 　　👉 컴파일 타임에 형변환에 대한 타입 오류를 잡아줌  
 👉 dynamic_cast  
