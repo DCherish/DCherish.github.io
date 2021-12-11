@@ -40,7 +40,7 @@ comments: true
 <br>
 
 ## virtual 🔥
-👋 [Link][Link4]  
+👋 [Link][Link3]  
 
 <br>
 
@@ -53,7 +53,7 @@ comments: true
 　　👉 부모 클래스의 포인터로 자식 클래스를 인자로 받을 경우  
 👉 downcast  
 　　👉 부모 클래스의 포인터 변수를 자식 클래스로 바꿔주는 경우  
-👋 [Link][Link3]  
+👋 [Link][Link4]  
 
 
 <br>
@@ -741,5 +741,5 @@ void Radix_Sort()
 
 [Link1]: https://velog.io/@underlier12/C-03-%EC%83%9D%EC%84%B1%EC%9E%90%EC%99%80-%EC%86%8C%EB%A9%B8%EC%9E%90
 [Link2]: https://parksh86.tistory.com/35?category=660881
-[Link3]: https://hwan-shell.tistory.com/211
-[Link4]: https://modoocode.com/211
+[Link3]: https://modoocode.com/211
+[Link4]: https://hwan-shell.tistory.com/211
