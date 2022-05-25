@@ -38,7 +38,7 @@ comments: true
 <br>
 
 ## 오버라이딩(Overriding) ✔️
-👉 상속 받았을 때 부모 클래스의 함수를 사용하지 않고 다른 기능을 실행하기 위해 함수를 자식 클래스에서 같은 이름으로 재정의하는 것  
+👉 상속 받았을 때 부모 클래스의 함수를 그대로 사용하지 않고 다른 기능으로 실행하기 위해 함수를 자식 클래스에서 같은 이름으로 재정의하는 것  
 
 <br>
 
@@ -58,13 +58,19 @@ comments: true
 　　　　　　　　👉 부수 효과를 없애고 순수 함수를 만들어 모듈화 수준을 높이는 프로그래밍 패러다임  
 　　　　　　　　👋 객체 지향 프로그래밍에서 멤버 변수를 다룸에 있어 예상치 못한 버그가 일어날 수 있기에 이를 보완하기 위해 쓰임  
 　　　　　　　　👋 부수 효과 : 외부 상태를 변경 or 함수로 들어온 인자 상태를 변경하는 것  
-　　　　　　　　👋 순수 함수 : 외부의 상태 변경에 영향을 받지 않는 함수 (동일한 입력 → 항상 동일한 출력을 반환)  
+　　　　　　　　👋 순수 함수 : 외부의 상태 변경에 영향을 주지도 받지도 않는 함수 (동일한 입력 → 항상 동일한 출력을 반환)  
 
 <br>
 
 ## 제네릭 프로그래밍(Generic Programming) 🔥
-👉 데이터 형식에 의존하지 않고, 하나의 값이 여러 다른 데이터 타입들을 가질 수 있는 기술에 중점을 두어 재사용성을 높일 수 있는 프로그래밍 방식  
+👉 데이터 타입에 의존하지 않고, 하나의 값이 여러 다른 데이터 타입들을 가질 수 있는 기술에 중점을 두는 프로그래밍 방식  
 ✋ Generic Programming is a style of computer programming in which algorithms are written in terms of types to be specified-later that are then instantiated when needed for specific types provided as parameters  
+
+<br>
+
+## 반응형 프로그래밍(Reactive Programming) 🔥
+👉 데이터의 흐름과 전달에 관해 중점을 두는, 즉, 비동기적인 데이터 스트림을 이용한 프로그래밍 기법  
+✋ RxJava, RxSwift, etc  
 
 <br>
 
