@@ -68,13 +68,23 @@ comments: true
 
 <br>
 
+## Generic
+👉 자료형을 일반화 하는 것으로, 내부에서 그 자료형에 맞춰 교체하는 방법  
+
+<br>
+
 ## 반응형 프로그래밍(Reactive Programming) 🔥
 👉 데이터의 흐름과 전달에 관해 중점을 두는, 즉, 비동기적인 데이터 스트림을 이용한 프로그래밍 기법  
 ✋ RxJava, RxSwift, etc  
 
 <br>
 
-## 객체 지향 프로그래밍의 5가지 키워드 ✔️
+## Struct(C++)
+👉 사용자가 기본 타입을 가지고 새롭게 정의할 수 있는 사용자 정의 타입  
+
+<br>
+
+## 객체 지향 프로그래밍의 5가지 키워드
 👉 클래스/객체, 추상화, 다형성, 상속, 캡슐화  
 
 <br>
@@ -124,8 +134,12 @@ comments: true
 <br>
 
 ## 정보 은닉(Information hiding) ✔️
-👉 객체 내의 데이터 및 함수에 대한 접근 권한을 제어  
-👋 객체 안의 데이터가 다른 객체에게 잘못 조작되는 것을 막아줌으로 에러를 방지  
+👉 다른 객체에게 자신의 정보를 숨기고 자신의 연산 만을 통해 접근을 허용하는 것  
+
+<br>
+
+## 접근 제어 지시자
+👉 객체 내의 데이터 및 함수에 대한 접근 권한을 제어하는 역할  
 👋 public, private, protected // 모든 접근 허용, 외부 접근 불가능, 상속 클래스 접근 가능  
 
 <br>
@@ -138,9 +152,22 @@ comments: true
 
 <br>
 
+## Struct 🆚 Class
+👉 공통점 : 구조체 이름을 선언하고 dot(.) 연산자를 통해 값 또는 함수에 접근한다는 것  
+👉 가장 큰 차이는 메모리 저장 방식  
+　　👉 Struct는 값 타입, 복사 방식으로 동작  
+　　👉 Class는 참조 타입, 참조 방식으로 동작  
+　　　　👋 Struct의 인스턴스는 스택에 저장  
+　　　　👋 Class의 인스턴스는 힙에 저장, 참조 변수인 힙의 인스턴스 주소 값은 stack에 저장됨  
+👉 또한, 접근제어 지시자의 default 값이 다름  
+　　👋 Struct : public, Class : private  
+
+<br>
+
 ## OOP의 5대 원칙
 👉 SOLID  
 　　👉 단일 책임 원칙(Single Responsibility Principle) : 객체는 단 하나의 책임만 가져야 함  
+　　　　✋ 단일 모듈 변경의 이유는 오직 하나뿐이어야 함 ; 쉬운 유지보수를 위하여  
 　　👉 개방-폐쇄 원칙(Open Closed Principle) : 기존의 코드를 변경하지 않으면서 기능을 추가할 수 있도록 설계되어야 함  
 　　👉 리스코프 치환 원칙(Liskov Substitution Principle) : 일반화 관계에 대한 이야기, 자식 클래스는 최소한 자신의 부모 클래스에서 가능한 행위는 수행할 수 있어야 함  
 　　👉 인터페이스 분리 원칙(Interface Segregation Principle) : 인터페이스를 클라이언트에 특화되도록 분리시키라는 설계 원칙  
@@ -201,11 +228,6 @@ comments: true
 
 <br>
 
-## Struct(C++)
-👉 사용자가 기본 타입을 가지고 새롭게 정의할 수 있는 사용자 정의 타입  
-
-<br>
-
 ## Template(C++)
 👉 함수와 클래스가 제네릭 형과 동작할 수 있게 도와주는 C++ 프로그래밍 언어의 기능  
 ✋ Templates are a feature of the C++ Programming language that allows functions and classes to operate with generic types  
@@ -231,15 +253,19 @@ comments: true
 👉 Heap  
 　　👉 프로그래머가 할당/해제하는 메모리 영역  
 　　👉 런 타임에 크기가 결정됨  
+　　👋 데이터 액세스 속도가 빠르다는 장점  
+　　👋 스택에 크기 제한이 있어 한계를 초과하여 삽입할 수 없다는 단점  
 　　👋 이 공간에 메모리 할당하는 것을 동적 할당이라고 함  
 👉 Stack  
 　　👉 프로그램이 자동으로 사용하는 임시 메모리 영역  
 　　👉 컴파일 타임에 크기가 결정됨  
+　　👋 프로그램에 필요한 개체의 개수나 크기를 미리 알 수 없을 때 사용가능하다는 장점  
+　　👋 할당 후 해제하지 않으면 Memory Leak 발생한다는 단점  
 　　👋 함수 호출시 생성되는 지역 변수와 매개변수가 이곳에 저장됨  
 　　👋 함수 호출이 완료되면 사라짐  
 
 ⚠️ Heap과 Stack은 같은 공간을 공유  
-⚠️ Heap은 위쪽 주소부터 할당되며, Stack은 아래쪽부터 할당되는 방식  
+⚠️ Heap은 낮은 주소부터 높은 주소로 할당되며, Stack은 높은 주소에서 낮은 주소로 할당되는 방식  
 ⚠️ 각 영역이 상대 공간을 침범하는 일이 발생할 수 있음  
 ⚠️ 이를, Heap Overflow, Stack Overflow  
 ⚠️ Stack 영역이 크면 클수록 Heap 영역이 작아지고, 반대도 동일함  
@@ -255,13 +281,6 @@ comments: true
 
 <br>
 
-## using namespace std
-👉 std ; C++ 표준 라이브러리의 모든 것은 std라는 namespace에 존재  
-👉 namespace ; 모든 식별자(변수, 함수)가 고유하도록 보장하는 코드 영역  
-👉 using ; 사용하겠다  
-
-<br>
-
 ## Library
 👉 자주 사용하는 코드를 함수로 가공하여 정리해 놓은 것을 재사용할 수 있게끔 해놓은 일종의 코드 모음집  
 
@@ -269,7 +288,7 @@ comments: true
 
 ## Framework
 👉 소프트웨어의 특정 문제를 해결하기 위해서 상호 협력하는 클래스와 인터페이스의 집합  
-👉 쉽게 말해, 특정 프로그램을 만들기 위해 여러 기능을 제공하는 프로그램  
+👉 쉽게 말해, 특정 프로그램을 만들기 위해 여러 기능을 제공함  
 
 <br>
 
@@ -286,6 +305,19 @@ comments: true
 ✋ 13 7 9 3 ➡️ 7 13 9 3 ➡️ 7 9 13 3 ➡️ 7 9 3 **13**  
 ✋ 7 9 3 **13** ➡️ 7 3 **9 13** ➡️ 3 **7 9 13** ➡️ **3 7 9 13**  
 ✋ 2개씩 지정, swap  
+👋 code  
+```c++
+void bubblesort()
+{
+	for (int i = n - 1; i > 0; i--)
+	{
+		for (int j = 0; j < i; j++)
+                {
+                        if (arr[j] > arr[j + 1]) swap(arr[j], arr[j + 1]);
+                }
+	}
+}
+```  
 
 <br>
 
@@ -298,6 +330,24 @@ comments: true
 ✋ **13** 7 9 3 ➡️ 13 **7** 9 3 ➡️ **7 13** 9 3  
 ✋ 7 13 **9** 3 ➡️ **7 9 13** 3 ➡️ 7 9 13 **3** ➡️ **3 7 9 13**  
 ✋ 한 곳 기준 정렬, 자신에게 맞는 위치에 insert  
+```c++
+void insertionsort()
+{
+	for (int i = 1; i < n; i++)
+	{
+                int key = arr[i];
+                int j;
+
+		for (j = i - 1; j >= 0; j--)
+                {
+                        if (arr[j] > key) arr[j + 1] = key;
+                        else break;
+                }
+
+                arr[j + 1] = key;
+	}
+}
+```  
 
 <br>
 
@@ -308,6 +358,22 @@ comments: true
 ✋ **13 9** 7 3 ➡️ **13** 9 **7** 3 ➡️ **13** 9 7 **3**  
 ✋ **3** 9 7 **13** ➡️ 3 **9** **7** 13 ➡️ 3 **7 9** 13  
 ✋ 하나 기준, 제외 min/max 찾은 후 swap  
+```c++
+void selectionsort()
+{
+	for (int i = 0; i < n - 1; i++)
+	{
+                int minidx = i;
+
+		for (int j = i + 1; j < n; j++)
+                {
+                        if (arr[j] < arr[minidx]) minidx = j;
+                }
+
+                swap(arr[i], arr[minidx]);
+	}
+}
+```  
 
 <br>
 
@@ -320,6 +386,63 @@ comments: true
 ✋ 2 7 | **4 9** ➡️ **2 4 7 9**  
 ✋ 먼저 반으로 나누고, 후에 병합  
 ✋ 병합 시 비교하며 순서에 맞게 & temp 배열이 필요(not in-place)  
+```c++
+void merge(int l, int m, int r)
+{
+        int i = l;
+        int j = m + 1;
+
+        int k = l;
+
+        while (i <= m && j <= r)
+        {
+                if (arr[i] <= arr[j])
+                {
+                        temp[k] = arr[i];
+                        i++;
+                }
+                else
+                {
+                        temp[k] = arr[j];
+                        j++;
+                }
+
+                k++;
+        }
+
+        while (i <= m)
+        {
+                temp[k] = arr[i];
+                i++;
+                k++;
+        }
+
+        while (j <= r)
+        {
+                temp[k] = arr[j];
+                j++;
+                k++;
+        }
+
+        for (int x = l; x <= r; x++)
+        {
+                arr[x] = temp[x];
+        }
+}
+
+void mergesort(int l, int r)
+{
+	if (l < r)
+        {
+                int mid = (l + r) / 2;
+
+                mergesort(l, mid);
+                mergesort(mid + 1, r);
+
+                merge(l, mid, r);
+        }
+}
+```  
 
 <br>
 
@@ -339,6 +462,35 @@ comments: true
 ✋ **1** "'2'" | 3 | **8** '5' 9 6 10 7 "4"  
 ✋ ...  
 ✋ 3개의 포인터(p, l, r), l > r 되는 순간 swap(p, r) 
+```c++
+void quicksort(int start, int end)
+{
+	if (start >= end) return;
+
+        int key = start;
+        int l = start + 1;
+        int r = end;
+
+        while (l <= r)
+        {
+                while (arr[l] <= arr[key] && l <= end)
+                {
+                        l++;
+                }
+
+                while (arr[r] >= arr[key] && r > start)
+                {
+                        r--;
+                }
+
+                if (l > r) swap(arr[key], arr[r]);
+                else swap(arr[l], arr[r]);
+        }
+
+        quicksort(start, r - 1);
+        quicksort(r + 1, end);
+}
+```  
 
 <br>
 
@@ -354,10 +506,43 @@ comments: true
 ✋ index 순으로 parent와 비교 후 swap -> heapify  
 ✋ heapify 후 root와 end_index swap, end_index - 1까지 다시 heapify  
 ✋ priority_queue의 원리  
+```c++
+void heapify(int num)
+{
+        for (int i = 2; i <= num; i++)
+        {
+                int idx = i;
+                int p_idx = i / 2;
+                
+                while (p_idx >= 1)
+                {
+                        if (arr[idx] > arr[p_idx])
+                        {
+                                swap(arr[idx], arr[p_idx]);
+                                idx /= 2;
+                                p_idx /= 2;
+                        }
+                        else break;
+                }
+        }
+}
+
+void heapsort()
+{
+	heapify(n);
+
+        for (int i = n; i >= 2; i--)
+        {
+                swap(arr[1], arr[i]);
+
+                heapify(i - 1);
+        }
+}
+```  
 
 <br>
 
-## Shell Sort
+## Shell Sort 🔥
 👉 O(n) ~ O(n^2) // Avg O(n^1.5)  
 👉 stable sort  
 👉 in-place sort  
@@ -396,7 +581,7 @@ void shellsort(int p[], int n)
 
 <br>
 
-## Counting Sort(계수 정렬)
+## Counting Sort(계수 정렬) 🔥
 👉 O(n+k) // k : 정렬 수 중 가장 큰 값  
 👉 stable sort  
 👉 not in-place sort  
@@ -424,7 +609,7 @@ void countingsort(A, B, C, min, max)
 
 <br>
 
-## Radix Sort(기수 정렬)
+## Radix Sort(기수 정렬) 🔥
 👉 O(d(n+k))  
 👉 must be stable  
 👉 not in-place sort  
@@ -554,10 +739,10 @@ void Radix_Sort()
 <br>
 
 ## LinkedList
-👉 연속적인 메모리 위치에 저장되지 않는 선형 자료구조  
+👉 데이터를 연속적인 메모리 위치에 저장되지 않는 선형 자료구조  
 ✋ 배열의 크기는 정해져 있고, 새로운 요소를 삽입하는 것에 비용이 많이 들기에 LinkedList를 사용  
 👉 즉, 동적인 크기와 삽입/삭제에 용이  
-✋ 임의로 액세스를 허용할 수 없어, 첫 번째 노드부터 순차적으로 요소에 액세스 하므로 탐색에 있어 불리  
+✋ 임의로 액세스를 허용할 수 없어, 첫 번째 노드부터 순차적으로 요소에 액세스 하므로 접근에 있어 불리  
 ✋ 포인터를 사용하므로 메모리 공간이 각 요소에 필요  
 
 <br>
@@ -565,13 +750,13 @@ void Radix_Sort()
 ## Array 🆚 List
 👉 Array  
 　　👉 크기가 정해져 있으며(수정 불가), stack 영역에 메모리 할당  
-　　👉 삽입과 삭제시 비용이 크지만 인덱스를 이용한 검색이 최적화  
+　　👉 삽입과 삭제시 비용이 크지만 인덱스를 이용한 접근이 최적화  
 　　✋ 연속적이므로 메모리 관리가 편리  
-　　✋ 배열은 메모리 공간에 연속적으로 있기 때문에 해당 주소값 + (A * N)byte로 검색  
+　　✋ 배열은 메모리 공간에 연속적으로 있기 때문에 해당 주소값 + (A * N)byte로 조회  
 👉 List  
 　　👉 크기가 고정적이지 않으며, heap 영역에 메모리 할당  
 　　👉 삽입과 삭제시 전후 노드의 참조 관계만 수정하면 되기 때문에 효율적  
-　　👉 첫 번째 노드부터 순차적으로 요소에 액세스 하므로 검색은 비효율적  
+　　👉 첫 번째 노드부터 순차적으로 요소에 액세스 하므로 접근은 비효율적  
 　　✋ 리스트는 메모리 공간에 연속적으로 있지 않기 때문에 포인터를 따라가며 그만큼 시간이 소요됨  
 
 <br>
@@ -619,7 +804,7 @@ void Radix_Sort()
 
 <br>
 
-## Hash ✔️
+## Hash Table ✔️
 👉 연관배열 구조를 이용하여 key와 결과 값(value)를 저장하는 자료구조  
 👉 해시 함수를 구현하여 데이터 값(key)을 해시 값으로 Mapping  
 ✋ 적은 자원으로 많은 데이터를 효율적으로 관리하기 위해 사용  
@@ -629,17 +814,17 @@ void Radix_Sort()
 ✋ value : 저장소에 최종적으로 저장되는 값으로 키와 매칭되어 있음  
 👋 좋은 해시 함수 구현방법 5가지  
 　　👋 1) 제산법 : 모듈러 연산자를 사용하는 방식, k mod M  
-　　　　👋 일반적으로, M의 값을 해시 테이블의 크기보다 큰 수에서 가장 작은 소수로 설정  
+　　　　👋 일반적으로, M의 값을 해시 테이블의 크기보다 큰 수 중에서 가장 작은 소수로 설정  
 　　　　✋ M이 짝수라면, k 짝수일 때 짝수 발생, k 홀수일 때 홀수 발생하여 고르게 분포되지 X  
 　　👋 2) 제곱법 : key 값을 제곱한 후 중간 부분의 비트 값을 이용하는 방식  
-　　👋 3) 폴딩법 : key 값을 여러 부분으로 나눈 후 각 부분의 값을 더하거나 XOR 연산의 결과 값을 사용하는 방식  
-　　👋 4) 기수 변환법 : key 값의 진수를 다른 진수로 변환시켜 주소 크기를 초과한 높은 자릿수를 절단하고, 이를 주소 범위에 맞게 조정하는 방법  
-　　👋 5) 계수 분석법 : key 값을 이루는 숫자의 분포를 분석하여 비교적 고르게 분포되어 있는 수들을 크기에 맞게 조합하여 사용하는 방법  
+　　👋 3) 폴딩법 : key의 비트 값을 여러 부분으로 나눈 후 각 부분의 값을 더하거나 XOR 연산의 결과 값을 사용하는 방식  
+　　👋 4) 기수 변환법 : key 값의 진수를 다른 진수로 변환시켜 주소 크기를 벗어난 높은 자릿수를 제거하여 주소 범위에 맞게 사용하는 방법  
+　　👋 5) 계수 분석법 : key 값을 이루는 숫자의 분포를 분석하여 비교적 고르게 분포되어 있는 자리 수들을 크기에 맞게 조합하여 사용하는 방법  
 　　　　✋ 학번; 입학년도 의미하는 수를 제외한 나머지 수  
 
 <br>
 
-## Hash Table 충돌 방지 기법 ✔️
+## Hash Table 충돌 해결 기법 ✔️
 👉 해시 충돌; 다른 내용의 데이터 값이 해시 값으로 Mapping 했을 때 같아진 상황  
 ✋ 너무 많은 해시 충돌은 Hash Table의 성능을 저하  
 ✋ 해시 함수를 잘 정의하여 해시 충돌을 최소화 해야함  
@@ -665,7 +850,7 @@ void Radix_Sort()
 <br>
 
 ## Map
-👉 key를 기준으로 데이터를 정렬하며, key와 value를 원소로 저장하는 자료구조  
+👉 중복을 허용하지 않고, key와 value를 원소로 저장하는 자료구조  
 
 <br>
 
@@ -683,8 +868,8 @@ void Radix_Sort()
 <br>
 
 ## B Tree & B+ Tree
-✋ 이진 트리는 하나의 부모가 두 개의 자식밖에 가지질 못하므로, 균형이 맞지 않을 때 검색 효율이 선형검색 급으로 매우 떨어짐  
-👉 B Tree는 이진 트리를 확장하여 더 많은 자식의 수를 가질 수 있도록 일반화 시킨 자료구조  
+✋ BST는 하나의 부모가 두 개의 자식밖에 가지질 못하므로, 균형이 맞지 않을 때 검색 효율이 선형검색 급으로 매우 떨어짐  
+👉 B Tree는 BST를 확장하여 더 많은 자식의 수를 가질 수 있도록 일반화 시킨 자료구조  
 👉 트리의 균형이 항상 맞다는 특성을 가지고 있음  
 👉 B+ Tree는 B Tree를 개선한 자료구조  
 👉 B+ Tree의 leaf node들은 LinkedList로 연결되어 있어 순차 검색이 용이함  
@@ -698,9 +883,16 @@ void Radix_Sort()
 ✋ 각 leaf node의 색은 black  
 ✋ 어떤 노드의 색이 red라면 두 개의 child node의 색은 모두 black  
 ✋ 모든 leaf node에서 root node까지 가는 경로에서 만나는 black 노드의 개수는 동일  
-✋ 이러한 특성을 만족하는 BST를 RB Tree  
 ✋ 삽입되는 모든 노드의 색은 red, 하지만 조건을 만족하기 위해 경우에 따라 recoloring 혹은 restructuring 적용  
+✋ 이러한 특성을 만족하는 BST를 RB Tree  
 👋 [Link][Link5]  
+
+<br>
+
+## using namespace std
+👉 std ; C++ 표준 라이브러리의 모든 것은 std라는 namespace에 존재  
+👉 namespace ; 모든 식별자(변수, 함수)가 고유하도록 보장하는 코드 영역  
+👉 using ; 사용하겠다  
 
 <br>
 
