@@ -17,28 +17,20 @@ comments: true
 <br>
 
 ## Call-by-Value 🆚 Call-by-Reference ✔️
+👋 함수 호출될 때 전달되는 인자는 항상 매개변수의 사본을 전달받는 방식  
 👉 Call-by-Value  
 　　👉 함수 호출 시 인자로 값(Value)을 넘겨주는 방식  
-　　👉 데이터를 복사하는 과정에서 발생  
+　　👉 복사 방식, 값을 복사하여 즉, 사본을 생성하여 사용하는 방식  
+　　👉 즉, 데이터의 복사 연산(비용)이 발생 O + 원본에 영향을 주지 X    
 👉 Call-by-Reference  
 　　👉 함수 호출 시 인자로 레퍼런스(Reference, 주소값)을 넘겨주는 방식  
-　　👉 따로, 데이터의 복사 연산이 발생 X  
+　　👉 참조 방식, 단순히 주소 값을 통해 참조하는 방식  
+　　👉 즉, 따로 데이터의 복사 연산(비용)이 발생하지 X + 원본에 영향을 주게됨  
 　　✋ 원본 데이터 변경 막을때는 const  
 　　👋 1. 포인터를 넘겨주는 방식 // add(&a, &b), void add(int *a, int *b)  
 　　👋 2. 레퍼런스를 이용하는 방식 // add(a, b), void add(int &a, int &b)  
-
-<br>
-
-## 함수 오버로딩(Overloading) ✔️
-👉 동일한 이름을 가진 함수를 중복해서 정의하는 것  
-👋 단, 반드시 인자 개수 혹은 타입이 달라야 함  
-👋 가능한 이유 : 호출할 함수를 매개변수의 정보까지 참조하기 때문  
-👋 return 타입만 다를 경우는 error  
-
-<br>
-
-## 오버라이딩(Overriding) ✔️
-👉 상속 받았을 때 부모 클래스의 함수를 그대로 사용하지 않고 다른 기능으로 실행하기 위해 함수를 자식 클래스에서 같은 이름으로 재정의하는 것  
+👋 [Link][Link6]
+👋 아래의 생성자, 상속, virtual 참고  
 
 <br>
 
@@ -114,7 +106,72 @@ comments: true
 ## 다형성(Polymorphism) ✔️
 👉 보이는 모습은 하나이지만 실질적으로 쓰이는 기능은 여러 가지로 수행 가능하다는 것  
 ✋ Polymorphism is the provision of a single interface to entities of different types or the use of a single symbol to represent multiple different types  
-✋ Overloading, Overriding  
+👋 여러 객체를 하나의 타입으로 관리가 가능하기 때문에 코드 관리가 편해 유지보수가 용이  
+👋 객체를 재활용하기 쉬워지기 때문에 코드 재사용성이 높아짐  
+👋 Overloading, Overriding  
+
+<br>
+
+## 오버로딩(Overloading) ✔️
+👉 동일한 이름을 가진 함수를 중복해서 정의하는 것  
+👋 단, 반드시 인자 개수 혹은 타입이 달라야 함  
+👋 가능한 이유 : 호출할 함수를 매개변수의 정보까지 참조하기 때문  
+👋 return 타입만 다를 경우는 error  
+
+<br>
+
+## 오버라이딩(Overriding) ✔️
+👉 상속 받았을 때 부모 클래스의 함수를 그대로 사용하지 않고 다른 기능으로 실행하기 위해 함수를 자식 클래스에서 같은 이름으로 재정의하는 것  
+
+<br>
+
+## Overloading 🆚 Overriding
+👋 Overloading : 대상이 되는 함수를 컴파일 타임에 지정  
+👋 Overriding : 대상이 되는 함수를 런 타임에 지정  
+👋 ex) code  
+```c++
+class Car
+{
+        // A
+        void hi() { cout << "hi Car!"; } // Overriding
+};
+
+class Suv : Car
+{
+        // B
+        void hi() { cout << "hi Suv!"; } // Overriding
+};
+
+class Bt : Suv
+{
+        // C
+        void hi() { cout << "hi Bt!"; } // Overriding
+};
+
+void hello(Car c) { cout << "hello Car!"; } // Overloading
+void hello(Suv s) { cout << "hello Suv!"; } // Overloading
+
+int main()
+{
+        Car c = Car();
+        Suv s = Suv();
+
+        hello(c); // hello Car! 
+        hello(s); // hello Suv!
+
+        Car suv = Suv();
+
+        hello(suv); // hello Car!
+        suv.hi(); // hi Suv!
+        //...
+}
+```  
+👋 [Link][Link7]  
+
+<br>
+
+## 동적바인딩 ✔️
+👉   
 
 <br>
 
@@ -889,13 +946,6 @@ void Radix_Sort()
 
 <br>
 
-## using namespace std
-👉 std ; C++ 표준 라이브러리의 모든 것은 std라는 namespace에 존재  
-👉 namespace ; 모든 식별자(변수, 함수)가 고유하도록 보장하는 코드 영역  
-👉 using ; 사용하겠다  
-
-<br>
-
 ## 생성자 및 소멸자 🔥
 👋 [Link][Link1]  
 
@@ -908,6 +958,13 @@ void Radix_Sort()
 
 ## virtual 🔥
 👋 [Link][Link3]  
+
+<br>
+
+## using namespace std
+👉 std ; C++ 표준 라이브러리의 모든 것은 std라는 namespace에 존재  
+👉 namespace ; 모든 식별자(변수, 함수)가 고유하도록 보장하는 코드 영역  
+👉 using ; 사용하겠다  
 
 <br>
 
@@ -947,3 +1004,5 @@ void Radix_Sort()
 [Link3]: https://modoocode.com/211
 [Link4]: https://hwan-shell.tistory.com/211
 [Link5]: https://code-lab1.tistory.com/62
+[Link6]: https://junstar92.tistory.com/107
+[Link7]: https://blog.naver.com/PostView.nhn?isHttpsRedirect=true&blogId=skykingkjs&logNo=150175869201&redirect=Dlog&widgetTypeCall=true
