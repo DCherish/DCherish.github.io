@@ -178,7 +178,7 @@ int main()
 }
 ```  
 👋 [Link][Link7]  
-👋 [Link][Link8]        
+👋 [Link][Link8]  
 
 <br>
 
@@ -302,6 +302,7 @@ int main()
 ## Template(C++)
 👉 함수와 클래스가 제네릭 형과 동작할 수 있게 도와주는 C++ 프로그래밍 언어의 기능  
 ✋ Templates are a feature of the C++ Programming language that allows functions and classes to operate with generic types  
+👋 [Link][Link9]  
 
 <br>
 
@@ -1021,3 +1022,4 @@ void Radix_Sort()
 [Link6]: https://junstar92.tistory.com/107
 [Link7]: https://blog.naver.com/PostView.nhn?isHttpsRedirect=true&blogId=skykingkjs&logNo=150175869201&redirect=Dlog&widgetTypeCall=true
 [Link8]: https://secretroute.tistory.com/entry/140819
+[Link9]: https://modoocode.com/219
