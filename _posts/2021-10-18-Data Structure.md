@@ -29,7 +29,7 @@ comments: true
 　　✋ 원본 데이터 변경 막을때는 const  
 　　👋 1. 포인터를 넘겨주는 방식 // add(&a, &b), void add(int *a, int *b)  
 　　👋 2. 레퍼런스를 이용하는 방식 // add(a, b), void add(int &a, int &b)  
-👋 [Link][Link6]
+👋 [Link][Link6]  
 👋 아래의 생성자, 상속, virtual 참고  
 
 <br>
@@ -49,8 +49,10 @@ comments: true
 　　　　　　👉 함수형 프로그래밍  
 　　　　　　　　👉 부수 효과를 없애고 순수 함수를 만들어 모듈화 수준을 높이는 프로그래밍 패러다임  
 　　　　　　　　👋 객체 지향 프로그래밍에서 멤버 변수를 다룸에 있어 예상치 못한 버그가 일어날 수 있기에 이를 보완하기 위해 쓰임  
-　　　　　　　　👋 부수 효과 : 외부 상태를 변경 or 함수로 들어온 인자 상태를 변경하는 것  
-　　　　　　　　👋 순수 함수 : 외부의 상태 변경에 영향을 주지도 받지도 않는 함수 (동일한 입력 → 항상 동일한 출력을 반환)  
+　　　　　　　　👋 부수 효과 : 외부 상태를 변경하거나, 인자로 전달된 데이터의 상태를 변경하는 것  
+　　　　　　　　👋 순수 함수 : 외부의 상태 변경에 아무런 영향을 주지도, 받지도 않는 함수 (동일한 입력 → 항상 동일한 출력을 반환)  
+　　　　　　　　👋 모듈 : 기능 단위로 분해하고 추상화되어 재사용 가능한 수준으로 만들어진 단위  
+　　　　　　　　👋 모듈화 : 소프트웨어의 성능을 향상시키거나 테스트 혹은 유지보수를 용이하도록 하는 소프트웨어 설계 기법  
 
 <br>
 
@@ -126,14 +128,15 @@ comments: true
 <br>
 
 ## Overloading 🆚 Overriding
-👋 Overloading : 대상이 되는 함수를 컴파일 타임에 지정  
-👋 Overriding : 대상이 되는 함수를 런 타임에 지정  
+👋 Overloading : 대상이 되는 함수를 컴파일 타임에 지정, 정적바인딩 개념  
+👋 Overriding : 대상이 되는 함수를 런 타임에 지정, 정적/동적바인딩 개념  
 👋 ex) code  
 ```c++
 class Car
 {
         // A
         void hi() { cout << "hi Car!"; } // Overriding
+        // virtual void hi() { cout << "hi Car!"; } // Overriding
 };
 
 class Suv : Car
@@ -160,18 +163,27 @@ int main()
         hello(s); // hello Suv!
 
         Car suv = Suv();
+        
+        hello(suv); // hello Car! // 컴파일 시점에 지정되므로 이 시점에 Car suv에 실제로 무엇이 들어 있는지 알지 못함
+        suv.hi(); // hi Car! // 정적 바인딩으로 인해 hi Car!가 출력, virtual 키워드를 붙여도 동일한 결과가 출력 (hi Suv! X)
 
-        hello(suv); // hello Car!
-        suv.hi(); // hi Suv!
+        Car* mysuv;
+        
+        mysuv = &s;
+        mysuv->hi(); // hi Car! // 정적 바인딩으로 인해 hi Car!가 출력, virtual 키워드를 붙이면 동적 바인딩된 결과인 hi Suv! 출력
+        // 정확하게는, virtual 키워드를 만나면 프로그램을 만드는 시점에 알 수 없으니까 프로그램을 실행하는 시점에서 결정하게끔 미루는 동작 방식 
         //...
 }
 ```  
 👋 [Link][Link7]  
+👋 [Link][Link8]        
 
 <br>
 
-## 동적바인딩 ✔️
-👉   
+## 동적 바인딩 ✔️
+👉 런 타임에 메소드가 결정되는 바인딩
+👉 즉, 부모 클래스가 자식 클래스의 동작 방식을 알 수 없어도 오버라이딩을 통해 자식 클래스에 접근할 수 있음  
+👉 프로그램의 컴파일 시점에 부모 클래스는 자신의 멤버 함수밖에 접근할 수 없으나, 실행 시점에 동적 바인딩이 일어나 부모 클래스가 자식 클래스의 멤버 함수에 접근하여 해당 함수를 실행할 수 있음  
 
 <br>
 
@@ -1006,3 +1018,4 @@ void Radix_Sort()
 [Link5]: https://code-lab1.tistory.com/62
 [Link6]: https://junstar92.tistory.com/107
 [Link7]: https://blog.naver.com/PostView.nhn?isHttpsRedirect=true&blogId=skykingkjs&logNo=150175869201&redirect=Dlog&widgetTypeCall=true
+[Link8]: https://secretroute.tistory.com/entry/140819
