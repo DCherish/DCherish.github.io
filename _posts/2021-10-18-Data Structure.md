@@ -58,6 +58,12 @@ comments: true
 
 <br>
 
+## 반응형 프로그래밍(Reactive Programming) 🔥
+👉 데이터의 흐름과 전달에 관해 중점을 두는, 즉, 비동기적인 데이터 스트림을 이용한 프로그래밍 기법  
+✋ RxJava, RxSwift, etc  
+
+<br>
+
 ## 제네릭 프로그래밍(Generic Programming) 🔥
 👉 데이터 타입에 의존하지 않고, 하나의 값이 여러 다른 데이터 타입들을 가질 수 있는 기술에 중점을 두는 프로그래밍 방식  
 ✋ Generic Programming is a style of computer programming in which algorithms are written in terms of types to be specified-later that are then instantiated when needed for specific types provided as parameters  
@@ -69,14 +75,10 @@ comments: true
 
 <br>
 
-## 반응형 프로그래밍(Reactive Programming) 🔥
-👉 데이터의 흐름과 전달에 관해 중점을 두는, 즉, 비동기적인 데이터 스트림을 이용한 프로그래밍 기법  
-✋ RxJava, RxSwift, etc  
-
-<br>
-
-## Struct(C++)
-👉 사용자가 기본 타입을 가지고 새롭게 정의할 수 있는 사용자 정의 타입  
+## Template(C++)
+👉 함수와 클래스가 제네릭 형과 동작할 수 있게 도와주는 C++ 프로그래밍 언어의 기능  
+✋ Templates are a feature of the C++ Programming language that allows functions and classes to operate with generic types  
+👋 [Link][Link9]  
 
 <br>
 
@@ -85,8 +87,25 @@ comments: true
 
 <br>
 
+## Struct(C++)
+👉 사용자가 기본 타입을 가지고 새롭게 정의할 수 있는 사용자 정의 타입  
+
+<br>
+
 ## Class ✔️
 👉 어떠한 객체를 만들기 위해 변수와 메서드를 정의한 틀  
+
+<br>
+
+## Struct 🆚 Class
+👉 공통점 : 구조체 이름을 선언하고 dot(.) 연산자를 통해 값 또는 함수에 접근한다는 것  
+👉 가장 큰 차이는 메모리 저장 방식  
+　　👉 Struct는 값 타입, 복사 방식으로 동작  
+　　　　👋 Struct의 인스턴스는 스택에 저장  
+　　👉 Class는 참조 타입, 참조 방식으로 동작  
+　　　　👋 Class의 인스턴스는 힙에 저장, 참조 변수인 힙의 인스턴스 주소 값은 stack에 저장됨  
+👉 또한, 접근제어 지시자의 default 값이 다름  
+　　👋 Struct : public, Class : private  
 
 <br>
 
@@ -130,8 +149,8 @@ comments: true
 <br>
 
 ## Overloading 🆚 Overriding
-👋 Overloading : 대상이 되는 함수를 컴파일 타임에 지정, 정적바인딩 개념  
-👋 Overriding : 대상이 되는 함수를 런 타임에 지정, 정적/동적바인딩 개념  
+👋 Overloading : 대상이 되는 함수를 컴파일 타임에 지정, 정적 바인딩 개념  
+👋 Overriding : 대상이 되는 함수를 런 타임에 지정, 정적/동적 바인딩 개념  
 👋 ex) code  
 ```c++
 class Car
@@ -166,14 +185,21 @@ int main()
 
         Car suv = Suv();
         
-        hello(suv); // hello Car! // 컴파일 시점에 지정되므로 이 시점에 Car suv에 실제로 무엇이 들어 있는지 알지 못함
-        suv.hi(); // hi Car! // 정적 바인딩으로 인해 hi Car!가 출력, virtual 키워드를 붙여도 동일한 결과가 출력 (hi Suv! X)
+        hello(suv); // hello Car!
+        // 컴파일 시점에 지정되므로
+        // 이 시점에 Car suv에 실제로 무엇이 들어 있는지 알지 못함
+        suv.hi(); // hi Car!
+        // 정적 바인딩으로 인해 hi Car!가 출력
+        // virtual 키워드를 붙여도 동일한 결과가 출력 (hi Suv! X)
 
         Car* mysuv;
         
         mysuv = &s;
-        mysuv->hi(); // hi Car! // 정적 바인딩으로 인해 hi Car!가 출력, virtual 키워드를 붙이면 동적 바인딩된 결과인 hi Suv! 출력
-        // 정확하게는, virtual 키워드를 만나면 프로그램을 만드는 시점에 알 수 없으니까 프로그램을 실행하는 시점에서 결정하게끔 미루는 동작 방식 
+        mysuv->hi(); // hi Car!
+        // 정적 바인딩으로 인해 hi Car!가 출력
+        // virtual 키워드를 붙이면 동적 바인딩된 결과인 hi Suv! 출력
+        // 정확하게는, virtual 키워드를 만나면 프로그램을 만드는 시점에 알 수 없으니까
+        // 프로그램을 실행하는 시점에서 결정하게끔 미루는 동작 방식 
         //...
 }
 ```  
@@ -183,7 +209,7 @@ int main()
 <br>
 
 ## 동적 바인딩 ✔️
-👉 런 타임에 메소드가 결정되는 바인딩
+👉 런 타임에 메소드가 결정되는 바인딩  
 👉 즉, 부모 클래스가 자식 클래스의 동작 방식을 알 수 없어도 오버라이딩을 통해 자식 클래스에 접근할 수 있음  
 👉 프로그램의 컴파일 시점에 부모 클래스는 자신의 멤버 함수밖에 접근할 수 없으나, 실행 시점에 동적 바인딩이 일어나 부모 클래스가 자식 클래스의 멤버 함수에 접근하여 해당 함수를 실행할 수 있음  
 
@@ -216,22 +242,8 @@ int main()
 <br>
 
 ## 접근 제한자 getter, setter 쓰는 이유
+👉 메서드를 통해서만 접근할 수 있기 때문에, 객체 안의 데이터가 다른 객체에게 잘못 조작되는 것을 막아줌  
 ✋ getter, setter는 정보 은닉이라는 특성을 잘 보여주고 있음  
-👉 사용하는 결정적인 이유는 객체의 무결성을 보장하기 위함  
-👋 메서드를 통해서만 접근할 수 있기 때문에, 객체 안의 데이터가 다른 객체에게 잘못 조작되는 것을 막아줌  
-✋ 또한, 메서드 안에서 매개변수같이 어떤 올바르지 않은 입력에 대해 사전에 처리할 수 있게 제한하거나 조절할 수 있음  
-
-<br>
-
-## Struct 🆚 Class
-👉 공통점 : 구조체 이름을 선언하고 dot(.) 연산자를 통해 값 또는 함수에 접근한다는 것  
-👉 가장 큰 차이는 메모리 저장 방식  
-　　👉 Struct는 값 타입, 복사 방식으로 동작  
-　　👉 Class는 참조 타입, 참조 방식으로 동작  
-　　　　👋 Struct의 인스턴스는 스택에 저장  
-　　　　👋 Class의 인스턴스는 힙에 저장, 참조 변수인 힙의 인스턴스 주소 값은 stack에 저장됨  
-👉 또한, 접근제어 지시자의 default 값이 다름  
-　　👋 Struct : public, Class : private  
 
 <br>
 
@@ -243,7 +255,6 @@ int main()
 　　👉 리스코프 치환 원칙(Liskov Substitution Principle) : 일반화 관계에 대한 이야기, 자식 클래스는 최소한 자신의 부모 클래스에서 가능한 행위는 수행할 수 있어야 함  
 　　👉 인터페이스 분리 원칙(Interface Segregation Principle) : 인터페이스를 클라이언트에 특화되도록 분리시키라는 설계 원칙  
 　　👉 의존 역전 원칙(Dependency Inversion Principle) : 의존 관계를 맺을 때 변화하기 어려운 것, 거의 변화가 없는 것에 의존하라는 것  
-
 
 <br>
 
@@ -299,13 +310,6 @@ int main()
 
 <br>
 
-## Template(C++)
-👉 함수와 클래스가 제네릭 형과 동작할 수 있게 도와주는 C++ 프로그래밍 언어의 기능  
-✋ Templates are a feature of the C++ Programming language that allows functions and classes to operate with generic types  
-👋 [Link][Link9]  
-
-<br>
-
 ## 프로그램 실행 순서
 👉 1. 사용자가 OS에게 프로그램 실행을 요청함  
 👉 2. OS는 프로그램의 정보를 읽어 메모리(RAM)에 로드함  
@@ -341,7 +345,7 @@ int main()
 ⚠️ 각 영역이 상대 공간을 침범하는 일이 발생할 수 있음  
 ⚠️ 이를, Heap Overflow, Stack Overflow  
 ⚠️ Stack 영역이 크면 클수록 Heap 영역이 작아지고, 반대도 동일함  
-👋 Overflow : 용량이 넘쳐 에러를 발생하는 것  
+👋 Overflow : 용량이 넘쳐 에러가 발생하는 것  
 
 <br>
 
@@ -812,9 +816,9 @@ void Radix_Sort()
 
 ## LinkedList
 👉 데이터를 연속적인 메모리 위치에 저장되지 않는 선형 자료구조  
-✋ 배열의 크기는 정해져 있고, 새로운 요소를 삽입하는 것에 비용이 많이 들기에 LinkedList를 사용  
 👉 즉, 동적인 크기와 삽입/삭제에 용이  
-✋ 임의로 액세스를 허용할 수 없어, 첫 번째 노드부터 순차적으로 요소에 액세스 하므로 접근에 있어 불리  
+👉 임의로 액세스를 허용할 수 없어, 첫 번째 노드부터 순차적으로 요소에 액세스 하므로 접근에 있어 불리  
+✋ 배열의 크기는 정해져 있고, 새로운 요소를 삽입하는 것에 비용이 많이 들기에 LinkedList를 사용  
 ✋ 포인터를 사용하므로 메모리 공간이 각 요소에 필요  
 
 <br>
@@ -966,6 +970,14 @@ void Radix_Sort()
 
 <br>
 
+## 얇은 복사 🆚 깊은 복사 (생성자)
+👉 얇은 복사  
+　　👉 최소한의 복사를 하여 인스턴스가 매모리에 새로 생성되지 않으며 주소값을 복사하여 같은 메모리를 가리킴  
+👉 깊은 복사  
+　　👉 데이터 자체를 통째로 복사하여 두 객체는 완전히 독립적인 메모리를 차지  
+
+<br>
+
 ## 상속과 객체 포인터 🔥
 👋 [Link][Link2]  
 
@@ -980,28 +992,6 @@ void Radix_Sort()
 👉 std ; C++ 표준 라이브러리의 모든 것은 std라는 namespace에 존재  
 👉 namespace ; 모든 식별자(변수, 함수)가 고유하도록 보장하는 코드 영역  
 👉 using ; 사용하겠다  
-
-<br>
-
-## 타입변환 연산자 🔥
-👉 static_cast  
-　　👉 컴파일 타임에 형변환에 대한 타입 오류를 잡아줌  
-👉 dynamic_cast  
-　　👉 클래스의 상속관계에서 형변환을 프로그래머가 올바르게 하도록 도와주는 기능  
-👉 upcast  
-　　👉 부모 클래스의 포인터로 자식 클래스를 인자로 받을 경우  
-👉 downcast  
-　　👉 부모 클래스의 포인터 변수를 자식 클래스로 바꿔주는 경우  
-👋 [Link][Link4]  
-
-
-<br>
-
-## 얇은 복사 🆚 깊은 복사 (생성자)
-👉 얇은 복사  
-　　👉 최소한의 복사를 하여 인스턴스가 매모리에 새로 생성되지 않으며 주소값을 복사하여 같은 메모리를 가리킴  
-👉 깊은 복사  
-　　👉 데이터 자체를 통째로 복사하여 두 객체는 완전히 독립적인 메모리를 차지  
 
 <br>
 <br>
