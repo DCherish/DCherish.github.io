@@ -73,7 +73,7 @@ comments: true
 <br>
 
 ## Context Switching ✔️
-👉 하나의 Task가 CPU를 사용 중인 상태에서 다른 Task가 CPU를 사용하도록 하기 위해, 이전의 Task 상태(Context)를 저장하고 새로운 Task의 상태를 적재하는 작업  
+👉 하나의 Task가 CPU를 사용 중인 상태에서 다른 Task가 CPU를 사용하도록 하기 위해, 이전의 Task의 Context를 저장하고 새로운 Task의 Context를 적재하는 작업  
 👋 Process와 Thread를 처리하는 Context Switching은 조금 다름  
 　　👋 Process는 OS에 의해 스케쥴링 되는 PCB를 통해 관리  
 　　👋 Thread는 Process내의 TCB(Thread Control Block)라는 내부 구조를 통해 관리  
@@ -126,7 +126,7 @@ comments: true
 👉 교착상태 회피  
 　　👉 은행원 알고리즘 사용  
 　　　　👉 운영체제가 안전 상태를 유지할 수 있는 요구만을 수락하고 불안전 상태를 초래할 요구는 나중에 안전 상태를 만족할 때까지 거절하는 알고리즘  
-　　👉 안전 상태 : 시스템에 교착상태를 일으키지 않으면서 각 프로세스가 필요로하는 요구량 만큼 자원을 할당해 줄 수 있는 상태, 즉, 안전 순서열이 존재하는 상태  
+　　👉 안전 상태 : 시스템에 교착상태를 일으키지 않으면서 각 프로세스가 필요로 하는 요구량 만큼 자원을 할당해 줄 수 있는 상태, 즉, 안전 순서열이 존재하는 상태  
 　　👉 불안전 상태 : 안전 순서열이 존재하지 않는 상태  
 
 <br>
@@ -357,6 +357,9 @@ comments: true
 👋 But, 만들고 사용하지 않아도 계속 메모리에 할당을 해놓으므로 Memory leak 발생할 수 있음  
 
 <br>
+<br>
+
+# 💚 Additional
 
 ## 다중 스레드 환경 Reader-Writer Lock 🔥
 👉 동기화 하기 위해 오직 reader-writer 락만을 사용하는 다중스레드 응용을 가정하자. 교착상태가 발생하기 위한 4가지 조건을 적용할 때, 다중 reader-writer 락이 사용되는 경우에도 여전히 교착상태가 발생할 수 있는가?  
