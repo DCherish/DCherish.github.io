@@ -59,13 +59,13 @@ comments: true
 <br>
 
 ## 반응형 프로그래밍(Reactive Programming) 🔥
-👉 데이터의 흐름과 전달에 관해 중점을 두는, 즉, 비동기적인 데이터 스트림을 이용한 프로그래밍 기법  
+👉 데이터의 흐름과 전달에 관해 중점을 두는, 즉, 비동기적인 데이터 스트림을 이용한 프로그래밍 패러다임  
 ✋ RxJava, RxSwift, etc  
 
 <br>
 
 ## 제네릭 프로그래밍(Generic Programming) 🔥
-👉 데이터 타입에 의존하지 않고, 하나의 값이 여러 다른 데이터 타입들을 가질 수 있는 기술에 중점을 두는 프로그래밍 방식  
+👉 데이터 타입에 의존하지 않고, 하나의 값이 여러 다른 데이터 타입을 가질 수 있도록 하는 기술에 중점을 두는 프로그래밍 패러다임  
 ✋ Generic Programming is a style of computer programming in which algorithms are written in terms of types to be specified-later that are then instantiated when needed for specific types provided as parameters  
 
 <br>
@@ -130,8 +130,7 @@ comments: true
 ## 다형성(Polymorphism) ✔️
 👉 보이는 모습은 하나이지만 실질적으로 쓰이는 기능은 여러 가지로 수행 가능하다는 것  
 ✋ Polymorphism is the provision of a single interface to entities of different types or the use of a single symbol to represent multiple different types  
-👋 여러 객체를 하나의 타입으로 관리가 가능하기 때문에 코드 관리가 편해 유지보수가 용이  
-👋 객체를 재활용하기 쉬워지기 때문에 코드 재사용성이 높아짐  
+👋 객체를 재활용하기 쉬워지기 때문에 코드 재사용성이 높아지고 유지보수가 용이  
 👋 Overloading, Overriding  
 
 <br>
