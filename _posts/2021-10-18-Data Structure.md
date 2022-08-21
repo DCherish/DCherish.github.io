@@ -58,13 +58,13 @@ comments: true
 
 <br>
 
-## 반응형 프로그래밍(Reactive Programming) 🔥
+## 반응형 프로그래밍(Reactive Programming)
 👉 데이터의 흐름과 전달에 관해 중점을 두는, 즉, 비동기적인 데이터 스트림을 이용한 프로그래밍 패러다임  
 ✋ RxJava, RxSwift, etc  
 
 <br>
 
-## 제네릭 프로그래밍(Generic Programming) 🔥
+## 제네릭 프로그래밍(Generic Programming)
 👉 데이터 타입에 의존하지 않고, 하나의 값이 여러 다른 데이터 타입을 가질 수 있도록 하는 기술에 중점을 두는 프로그래밍 패러다임  
 ✋ Generic Programming is a style of computer programming in which algorithms are written in terms of types to be specified-later that are then instantiated when needed for specific types provided as parameters  
 
@@ -968,7 +968,7 @@ void Radix_Sort()
 
 <br>
 
-## 생성자 및 소멸자 🔥
+## 생성자 및 소멸자
 👋 [Link][Link1]  
 
 <br>
@@ -981,12 +981,12 @@ void Radix_Sort()
 
 <br>
 
-## 상속과 객체 포인터 🔥
+## 상속과 객체 포인터
 👋 [Link][Link2]  
 
 <br>
 
-## virtual 🔥
+## virtual
 👋 [Link][Link3]  
 
 <br>
