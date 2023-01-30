@@ -58,23 +58,6 @@ comments: true
 
 <br>
 
-## 반응형 프로그래밍(Reactive Programming)
-👉 데이터의 흐름과 전달에 관해 중점을 두는, 즉, 비동기적인 데이터 스트림을 이용한 프로그래밍 패러다임  
-✋ RxJava, RxSwift, etc  
-
-<br>
-
-## 제네릭 프로그래밍(Generic Programming)
-👉 데이터 타입에 의존하지 않고, 하나의 값이 여러 다른 데이터 타입을 가질 수 있도록 하는 기술에 중점을 두는 프로그래밍 패러다임  
-✋ Generic Programming is a style of computer programming in which algorithms are written in terms of types to be specified-later that are then instantiated when needed for specific types provided as parameters  
-
-<br>
-
-## Generic
-👉 자료형을 일반화 하는 것으로, 내부에서 그 자료형에 맞춰 교체하는 방법  
-
-<br>
-
 ## Template(C++)
 👉 함수와 클래스가 제네릭 형과 동작할 수 있게 도와주는 C++ 프로그래밍 언어의 기능  
 ✋ Templates are a feature of the C++ Programming language that allows functions and classes to operate with generic types  
@@ -87,8 +70,8 @@ comments: true
 
 <br>
 
-## Struct(C++) ✔️
-👉 사용자가 기본 타입을 가지고 새롭게 정의할 수 있는 사용자 정의 타입  
+## Struct ✔️
+👉 사용자가 새롭게 정의하는 사용자 정의 타입  
 👉 캡슐화 목적으로 사용  
 
 <br>
@@ -104,9 +87,11 @@ comments: true
 　　👉 Struct는 값 타입, 복사 방식으로 동작  
 　　　　👋 Struct의 인스턴스는 스택에 저장  
 　　👉 Class는 참조 타입, 참조 방식으로 동작  
-　　　　👋 Class의 인스턴스는 힙에 저장, 참조 변수인 힙의 인스턴스 주소 값은 stack에 저장됨  
+　　　　👋 Class의 인스턴스는 힙에 저장되며, 그 힙의 인스턴스 주소 값은 stack에 저장됨  
 👉 또한, 접근제어 지시자의 default 값이 다름  
 　　👋 Struct : public, Class : private  
+　　👉 접근 제어 지시자 : 객체 내의 데이터 및 함수에 대한 접근 권한을 제어하는 역할  
+　　👋 public, private, protected // 모든 접근 허용, 외부 접근 불가능, 상속 클래스 접근 가능  
 
 <br>
 
@@ -138,7 +123,7 @@ comments: true
 ## 오버로딩(Overloading) ✔️
 👉 동일한 이름을 가진 함수를 중복해서 정의하는 것  
 👋 단, 반드시 인자 개수 혹은 타입이 달라야 함  
-👋 가능한 이유 : 호출할 함수를 매개변수의 정보까지 참조하기 때문  
+👋 가능한 이유 : 호출할 함수의 매개변수 정보까지 참조하기 때문  
 👋 return 타입만 다를 경우는 error  
 
 <br>
@@ -155,20 +140,17 @@ comments: true
 ```c++
 class Car
 {
-        // A
-        void hi() { cout << "hi Car!"; } // Overriding
-        // virtual void hi() { cout << "hi Car!"; } // Overriding
+        void hi() { cout << "hi Car!"; }
+        // virtual void hi() { cout << "hi Car!"; }
 };
 
 class Suv : Car
 {
-        // B
         void hi() { cout << "hi Suv!"; } // Overriding
 };
 
 class Bt : Suv
 {
-        // C
         void hi() { cout << "hi Bt!"; } // Overriding
 };
 
@@ -188,6 +170,7 @@ int main()
         hello(suv); // hello Car!
         // 컴파일 시점에 지정되므로
         // 이 시점에 Car suv에 실제로 무엇이 들어 있는지 알지 못함
+
         suv.hi(); // hi Car!
         // 정적 바인딩으로 인해 hi Car!가 출력
         // virtual 키워드를 붙여도 동일한 결과가 출력 (hi Suv! X)
@@ -224,20 +207,14 @@ int main()
 
 ## 캡슐화(Encapsulation) ✔️
 👉 관련있는 데이터와 함수를 하나의 단위로 묶는 것  
-👋 코드를 재수정없이 재활용할 수 있음  
+　　👋 코드를 재활용할 수 있음  
 👉 또한, 객체가 기능을 어떻게 구현했는지 외부에 감추는 것  
-👋 즉, 정보 은닉의 의미를 포함하고 있음  
+　　👋 즉, 정보 은닉의 의미를 포함하고 있음  
 
 <br>
 
 ## 정보 은닉(Information hiding) ✔️
 👉 다른 객체에게 자신의 정보를 숨기고 자신의 연산 만을 통해 접근을 허용하는 것  
-
-<br>
-
-## 접근 제어 지시자
-👉 객체 내의 데이터 및 함수에 대한 접근 권한을 제어하는 역할  
-👋 public, private, protected // 모든 접근 허용, 외부 접근 불가능, 상속 클래스 접근 가능  
 
 <br>
 
@@ -252,7 +229,7 @@ int main()
 　　👉 단일 책임 원칙(Single Responsibility Principle) : 객체는 단 하나의 책임만 가져야 함  
 　　　　✋ 단일 모듈 변경의 이유는 오직 하나뿐이어야 함 ; 쉬운 유지보수를 위하여  
 　　👉 개방-폐쇄 원칙(Open Closed Principle) : 기존의 코드를 변경하지 않으면서 기능을 추가할 수 있도록 설계되어야 함  
-　　👉 리스코프 치환 원칙(Liskov Substitution Principle) : 일반화 관계에 대한 이야기, 자식 클래스는 최소한 자신의 부모 클래스에서 가능한 행위는 수행할 수 있어야 함  
+　　👉 리스코프 치환 원칙(Liskov Substitution Principle) : 자식 클래스는 최소한 자신의 부모 클래스에서 가능한 행위는 수행할 수 있어야 함  
 　　👉 인터페이스 분리 원칙(Interface Segregation Principle) : 인터페이스를 클라이언트에 특화되도록 분리시키라는 설계 원칙  
 　　👉 의존 역전 원칙(Dependency Inversion Principle) : 의존 관계를 맺을 때 변화하기 어려운 것, 거의 변화가 없는 것에 의존하라는 것  
 
@@ -310,18 +287,10 @@ int main()
 
 <br>
 
-## 프로그램 실행 순서
-👉 1. 사용자가 OS에게 프로그램 실행을 요청함  
-👉 2. OS는 프로그램의 정보를 읽어 메모리(RAM)에 로드함  
-👉 3. CPU는 프로그램 코드를 가져다 메모리를 관리하고 명령문을 실행  
-👉 4. 동적메모리나 스택메모리가 할당되면 FreeStore 영역을 사용  
-
-<br>
-
 ## 메모리 구조 ✔️
 👉 Code  
 　　👉 작성한 소스코드가 들어가는 텍스트 영역  
-　　✋ 실행 파일을 구성하는 구성하는 명령어들이 올라가는 메모리 영역  
+　　✋ 실행 파일을 구성하는 명령어들이 올라가는 메모리 영역  
 　　👋 함수, 제어문, 상수 등이 이곳에 지정됨  
 👉 Data  
 　　👉 프로그램의 시작과 동시에 할당되고, 프로그램이 종료되어야 소멸되는 영역  
@@ -350,9 +319,9 @@ int main()
 　　👋 데이터 액세스 속도가 빠르다는 장점  
 　　　　👉 한 방향으로만 데이터를 넣고 빼는 단순한 구조이기 때문에 스택 포인터를 사용하여 빠르게 접근할 수 있음  
 　　　　👉 따라서, 스택 할당은 많은 시간을 필요로 하지 않음  
-　　　　👉 힙은 할당할 때마다 적절한 메모리 공간이 있는지 확인한 후에 할당을 처리하는 동적인 구조  
-　　　　👉 이러한 과정은 스택보다 복잡하기 때문에 더 많은 오버헤드(Overhead)가 발생  
-　　　　👉 그렇기 때문에 일반적으로 더 좋은 성능의 코드를 작성하기 위해서는 값 타입을 사용하는 것이 좋음  
+　　　　　　👉 힙은 할당할 때마다 적절한 메모리 공간이 있는지 확인한 후에 할당을 처리하는 동적인 구조  
+　　　　　　👉 이러한 과정은 스택보다 복잡하기 때문에 더 많은 오버헤드(Overhead)가 발생  
+　　　　👉 그렇기 때문에 일반적으로 더 좋은 성능의 코드를 작성하기 위해서는 되도록 값 타입을 사용하는 것이 좋음  
 　　👋 스택에 크기 제한이 있어 한계를 초과하여 삽입할 수 없다는 단점  
 👉 Heap  
 　　👋 프로그램에 필요한 개체의 개수나 크기를 미리 알 수 없을 때 사용 가능하다는 장점  
@@ -362,7 +331,7 @@ int main()
 
 ## static 변수
 👉 여러 객체가 하나의 변수를 공유하고자 할 때 쓰이는 변수  
-👉 compile 타임에 주소 및 크기가 결정, main 함수 실행되기 전 static area에 자리함  
+👉 compile 타임에 주소 및 크기가 결정  
 ✋ 이 변수는 각각의 객체의 멤버로 존재하는 것이 X  
 ✋ 접근할 수 있는 권한이 부여되는 개념  
 
@@ -381,7 +350,7 @@ int main()
 
 ## Framework 🆚 Library
 👉 Framework : 전체적인 흐름을 자체적으로 제어함  
-👉 Library : 사용자가 흐름에 대한 제어를 하며 필요한 상황에 가져다가 쓸 수 있음  
+👉 Library : 사용자가 직접 흐름에 대한 제어를 함  
 
 <br>
 
@@ -839,12 +808,12 @@ void Radix_Sort()
 　　👉 크기가 정해져 있으며(수정 불가), stack 영역에 메모리 할당  
 　　👉 삽입과 삭제시 비용이 크지만 인덱스를 이용한 접근이 최적화  
 　　✋ 연속적이므로 메모리 관리가 편리  
-　　✋ 배열은 메모리 공간에 연속적으로 있기 때문에 해당 주소값 + (A * N)byte로 조회  
+　　✋ 배열은 데이터가 메모리 공간에 연속적으로 있기 때문에 해당 주소값 + (A * N)byte로 조회  
 👉 List  
 　　👉 크기가 고정적이지 않으며, heap 영역에 메모리 할당  
 　　👉 삽입과 삭제시 전후 노드의 참조 관계만 수정하면 되기 때문에 효율적  
 　　👉 첫 번째 노드부터 순차적으로 요소에 액세스 하므로 접근은 비효율적  
-　　✋ 리스트는 메모리 공간에 연속적으로 있지 않기 때문에 포인터를 따라가며 그만큼 시간이 소요됨  
+　　✋ 리스트는 데이터가 메모리 공간에 연속적으로 있지 않기 때문에 포인터를 따라가며 그만큼 시간이 소요됨  
 
 <br>
 
@@ -925,7 +894,7 @@ void Radix_Sort()
 <br>
 
 ## Set
-👉 중복을 허용하지 않고, key를 저장하는 집합 개념의 자료구조  
+👉 중복을 허용하지 않고, key를 원소로 저장하는 자료구조  
 
 <br>
 
@@ -954,6 +923,7 @@ void Radix_Sort()
 👉 B+ Tree는 B Tree를 개선한 자료구조  
 👉 B+ Tree의 leaf node들은 LinkedList로 연결되어 있어 순차 검색이 용이함  
 👋 B Tree는 각 노드에 데이터가 저장되는 반면, B+ Tree는 index 노드와 leaf 노드로 분리되어 저장됨  
+　　👋 실제 데이터는 leaf 노드에만 존재하며, index 노드에는 범위 정보가 존재함  
 
 <br>
 
