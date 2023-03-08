@@ -1,0 +1,121 @@
+---
+layout: page
+title:  "Programmers 92343"
+subtitle: "양과 늑대"
+date:   2023-03-08 11:11:11 +0530
+categories: ["coding"]
+comments: true
+---
+
+<br>
+
+### CODE ⌨️
+
+```c++
+#include <string>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+vector<int> node[20];
+vector<int> state;
+bool visited[20][20][20];
+
+int maxSheep;
+
+void solve(int idx, int scnt, int wcnt)
+{
+    if (idx == 0) maxSheep = max(maxSheep, scnt);
+    
+    for (int i = 0; i < node[idx].size(); i++)
+    {
+        int next = node[idx][i];
+        
+        if (state[next] == 0)
+        {
+            if (!visited[next][scnt + 1][wcnt])
+            {
+                visited[next][scnt + 1][wcnt] = true;
+                state[next] = -1;
+                solve(next, scnt + 1, wcnt);
+                state[next] = 0;
+                visited[next][scnt + 1][wcnt] = false;
+            }
+        }
+        else if (state[next] == 1)
+        {
+            if (!visited[next][scnt][wcnt + 1] && scnt > wcnt + 1)
+            {
+                visited[next][scnt][wcnt + 1] = true;
+                state[next] = -1;
+                solve(next, scnt, wcnt + 1);
+                state[next] = 1;
+                visited[next][scnt][wcnt + 1] = false;
+            }
+        }
+        else
+        {
+            if (!visited[next][scnt][wcnt])
+            {
+                visited[next][scnt][wcnt] = true;
+                solve(next, scnt, wcnt);
+                visited[next][scnt][wcnt] = false;
+            }
+        }
+    }
+}
+
+int solution(vector<int> info, vector<vector<int>> edges)
+{
+    int answer = 0;
+    
+    for (int i = 0; i < edges.size(); i++)
+    {
+        node[edges[i][0]].push_back(edges[i][1]);
+        node[edges[i][1]].push_back(edges[i][0]);
+    }
+    
+    state = info;
+    state[0] = -1;
+    visited[0][1][0] = true;
+    solve(0, 1, 0);
+    
+    answer = maxSheep;
+    
+    return answer;
+}
+```  
+
+<br>
+<br>
+
+### RESULT 💛
+
+<img src="{{ '/assets/programmers/p92343r.png' }}" style="width: 400px; height: auto; margin-left: auto; margin-right: auto; display: block;">  
+
+<br>
+<br>
+
+### SIMPLE DISCUSSION ✏️
+
+**완전탐색** 응용 문제였다.  
+
+<br>
+<br>
+
+### SOURCE 💎
+
+[Programmers_Link][link] 👈 Click here  
+
+<br>
+
+<script src="https://utteranc.es/client.js"
+        repo="DCherish/DCherish.github.io"
+        issue-term="pathname"
+        theme="boxy-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+[link]: https://school.programmers.co.kr/learn/courses/30/lessons/92343
